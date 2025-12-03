@@ -23,3 +23,55 @@ The **scalar position** ($\tau\_{ij}$), **scalar velocity** ($\dot{\tau}\_{ij}$)
 | **Position** ($\tau\_{ij}$) | $\tau\_{ij} = \frac{1}{2} (\vec{r}\_i - \vec{r}\_j) \cdot (\vec{r}\_i - \vec{r}\_j)$ | *(Fundamental definition)* |
 | **Velocity** ($\dot{\tau}\_{ij}$) | $\dot{\tau}\_{ij} = (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{r}\_i - \vec{r}\_j)$ | $\dot{\tau}\_{ij} = \frac{d(\tau\_{ij})}{dt}$ |
 | **Acceleration** ($\ddot{\tau}\_{ij}$) | $\ddot{\tau}\_{ij} = (\vec{a}\_i - \vec{a}\_j) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{v}\_i - \vec{v}\_j)$ | $\ddot{\tau}\_{ij} = \frac{d^2(\tau\_{ij})}{dt^2}$ |
+
+## Fundamental Relations
+
+### Radial Magnitudes Relations
+
+The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **radial magnitudes** are given by:
+
+| Scalar Magnitude | Relation with Radial Magnitudes |
+| :--- | :--- |
+| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij} r\_{ij}$ |
+| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = \dot{r}\_{ij} r\_{ij}$ |
+| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = \ddot{r}\_{ij} r\_{ij} + \dot{r}\_{ij} \dot{r}\_{ij}$ |
+
+### Polar Magnitudes Relations
+
+The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **polar magnitudes** are given by:
+
+| Scalar Magnitude | Relation with Polar Magnitudes |
+| :--- | :--- |
+| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij} r\_{ij}$ |
+| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = \dot{r}\_{ij} r\_{ij}$ |
+| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = \ddot{r}\_{ij} r\_{ij} + \dot{r}\_{ij} \dot{r}\_{ij}$ |
+
+### Cylindrical Magnitudes Relations
+
+The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **cylindrical magnitudes** are given by:
+
+| Scalar Magnitude | Relation with Cylindrical Magnitudes |
+| :--- | :--- |
+| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij} r\_{ij}$ |
+| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = \dot{r}\_{ij} r\_{ij}$ |
+| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = \ddot{r}\_{ij} r\_{ij} + \dot{r}\_{ij} \dot{r}\_{ij}$ |
+
+### Circular Magnitudes Relations
+
+The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using circular magnitudes are given by:
+
+| Scalar Magnitude | Relation with Circular Magnitudes |
+| :--- | :--- |
+| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij} r\_{ij}$ |
+| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = \dot{r}\_{ij} r\_{ij}$ |
+| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = \ddot{r}\_{ij} r\_{ij} + \dot{r}\_{ij} \dot{r}\_{ij}$ |
+
+### Spherical Magnitudes Relations
+
+The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using spherical magnitudes ($r\_{ij}$) are given by:
+
+| Scalar Magnitude | Relation with Spherical Magnitudes |
+| :--- | :--- |
+| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij} r\_{ij}$ |
+| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = \dot{r}\_{ij} r\_{ij}$ |
+| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = \ddot{r}\_{ij} r\_{ij} + \dot{r}\_{ij} \dot{r}\_{ij}$ |
