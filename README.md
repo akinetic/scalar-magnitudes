@@ -20,9 +20,9 @@ The **scalar position** ($\tau\_{ij}$), **scalar velocity** ($\dot{\tau}\_{ij}$)
 
 | Scalar Magnitude | Definition | Derivation |
 | :--- | :--- | :--- |
-| **Position** ($\tau\_{ij}$) | $\tau\_{ij} = \frac{1}{2} (\vec{r}\_i - \vec{r}\_j) \cdot (\vec{r}\_i - \vec{r}\_j)$ | *(Fundamental definition)* |
-| **Velocity** ($\dot{\tau}\_{ij}$) | $\dot{\tau}\_{ij} = (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{r}\_i - \vec{r}\_j)$ | $\dot{\tau}\_{ij} = \frac{d(\tau\_{ij})}{dt}$ |
-| **Acceleration** ($\ddot{\tau}\_{ij}$) | $\ddot{\tau}\_{ij} = (\vec{a}\_i - \vec{a}\_j) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{v}\_i - \vec{v}\_j)$ | $\ddot{\tau}\_{ij} = \frac{d^2(\tau\_{ij})}{dt^2}$ |
+| **Position** ($\tau\_{ij}$) | $\tau\_{ij} = \frac{1}{2} \vec{r}\_{ij} \cdot \vec{r}\_{ij} = \frac{1}{2} (\vec{r}\_i - \vec{r}\_j) \cdot (\vec{r}\_i - \vec{r}\_j)$ | *(Fundamental definition)* |
+| **Velocity** ($\dot{\tau}\_{ij}$) | $\dot{\tau}\_{ij} = \vec{v}\_{ij} \cdot \vec{r}\_{ij} = (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{r}\_i - \vec{r}\_j)$ | $\dot{\tau}\_{ij} = \frac{d(\tau\_{ij})}{dt}$ |
+| **Acceleration** ($\ddot{\tau}\_{ij}$) | $\ddot{\tau}\_{ij} = \vec{a}\_{ij} \cdot \vec{r}\_{ij} + \vec{v}\_{ij} \cdot \vec{v}\_{ij} = (\vec{a}\_i - \vec{a}\_j) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{v}\_i - \vec{v}\_j)$ | $\ddot{\tau}\_{ij} = \frac{d^2(\tau\_{ij})}{dt^2}$ |
 
 ## Fundamental Relations
 
