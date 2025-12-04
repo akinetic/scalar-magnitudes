@@ -1,10 +1,10 @@
 # Scalar Magnitudes, Definitions, and Relations
 
-> **Scalar Magnitudes** conserve their value and form under transformations of translation and rotation, or changes between coordinate systems (Cartesian, polar, spherical, etc.).
+> **Scalar Magnitudes are quantities that conserve their value and form under transformations of translation and rotation, or changes between coordinate systems (Cartesian, polar, spherical, etc.).**
 
 ---
 
-## Definitions
+## I. Definitions
 
 ### Vectorial Magnitudes
 
@@ -28,61 +28,7 @@ The **scalar position** ($\tau\_{ij}$), **scalar velocity** ($\dot{\tau}\_{ij}$)
 
 ---
 
-## Fundamental Relations
-
-### Radial Magnitudes Relations
-
-The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **radial magnitudes** ($r\_{ij}$) are given by:
-
-| Scalar Magnitude | Relation with Radial Magnitudes |
-| :--- | :--- |
-| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij}^2$ |
-| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = r\_{ij} \dot{r}\_{ij}$ |
-| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = r\_{ij} \ddot{r}\_{ij} + \dot{r}\_{ij}^2$ |
-
-### Polar Magnitudes Relations
-
-The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **polar magnitudes** ($r\_{ij}$) are given by:
-
-| Scalar Magnitude | Relation with Polar Magnitudes |
-| :--- | :--- |
-| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij}^2$ |
-| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = r\_{ij} \dot{r}\_{ij}$ |
-| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = r\_{ij} \ddot{r}\_{ij} + \dot{r}\_{ij}^2$ |
-
-### Cylindrical Magnitudes Relations
-
-The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **cylindrical magnitudes** ($r\_{ij}$) are given by:
-
-| Scalar Magnitude | Relation with Cylindrical Magnitudes |
-| :--- | :--- |
-| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij}^2$ |
-| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = r\_{ij} \dot{r}\_{ij}$ |
-| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = r\_{ij} \ddot{r}\_{ij} + \dot{r}\_{ij}^2$ |
-
-### Circular Magnitudes Relations
-
-The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **circular magnitudes** ($r\_{ij}$) are given by:
-
-| Scalar Magnitude | Relation with Circular Magnitudes |
-| :--- | :--- |
-| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij}^2$ |
-| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = r\_{ij} \dot{r}\_{ij}$ |
-| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = r\_{ij} \ddot{r}\_{ij} + \dot{r}\_{ij}^2$ |
-
-### Spherical Magnitudes Relations
-
-The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **spherical magnitudes** ($r\_{ij}$) are given by:
-
-| Scalar Magnitude | Relation with Spherical Magnitudes |
-| :--- | :--- |
-| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij}^2$ |
-| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = r\_{ij} \dot{r}\_{ij}$ |
-| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = r\_{ij} \ddot{r}\_{ij} + \dot{r}\_{ij}^2$ |
-
----
-
-## Scalar Invariance Demonstrations
+## II. Scalar Invariance Demonstrations
 
 ### 0. Vectorial Transformations (Absolute)
 
@@ -152,3 +98,66 @@ $\text{Because } (\vec{A} \times (\vec{B} \times \vec{C})) \cdot \vec{C} = - (\v
 $\ddot{\tau}'\_{ij} = (\vec{a}\_i - \vec{a}\_j) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{v}\_i - \vec{v}\_j)$
 
 $\therefore \ddot{\tau}'\_{ij} = \ddot{\tau}\_{ij}$
+
+---
+
+## III. Fundamental Relations
+
+### Radial Magnitudes Relations
+
+The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **radial magnitudes** ($r\_{ij}$) are given by:
+
+| Scalar Magnitude | Relation with Radial Magnitudes |
+| :--- | :--- |
+| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij}^2$ |
+| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = r\_{ij} \dot{r}\_{ij}$ |
+| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = r\_{ij} \ddot{r}\_{ij} + \dot{r}\_{ij}^2$ |
+
+### Polar Magnitudes Relations
+
+The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **polar magnitudes** ($r\_{ij}$) are given by:
+
+| Scalar Magnitude | Relation with Polar Magnitudes |
+| :--- | :--- |
+| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij}^2$ |
+| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = r\_{ij} \dot{r}\_{ij}$ |
+| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = r\_{ij} \ddot{r}\_{ij} + \dot{r}\_{ij}^2$ |
+
+### Cylindrical Magnitudes Relations
+
+The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **cylindrical magnitudes** ($r\_{ij}$) are given by:
+
+| Scalar Magnitude | Relation with Cylindrical Magnitudes |
+| :--- | :--- |
+| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij}^2$ |
+| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = r\_{ij} \dot{r}\_{ij}$ |
+| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = r\_{ij} \ddot{r}\_{ij} + \dot{r}\_{ij}^2$ |
+
+### Circular Magnitudes Relations
+
+The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **circular magnitudes** ($r\_{ij}$) are given by:
+
+| Scalar Magnitude | Relation with Circular Magnitudes |
+| :--- | :--- |
+| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij}^2$ |
+| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = r\_{ij} \dot{r}\_{ij}$ |
+| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = r\_{ij} \ddot{r}\_{ij} + \dot{r}\_{ij}^2$ |
+
+### Spherical Magnitudes Relations
+
+The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **spherical magnitudes** ($r\_{ij}$) are given by:
+
+| Scalar Magnitude | Relation with Spherical Magnitudes |
+| :--- | :--- |
+| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij}^2$ |
+| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = r\_{ij} \dot{r}\_{ij}$ |
+| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = r\_{ij} \ddot{r}\_{ij} + \dot{r}\_{ij}^2$ |
+
+---
+
+## IV. Bibliography
+
+1.  A. Torassa, *A Group of Invariant Equations* (2014). [PDF](https://atorassa.github.io/physics-authors/torassa/english/pdf/34.pdf)
+2.  A. Torassa, *A Reformulation of Classical Mechanics* (2014). [PDF](https://atorassa.github.io/physics-authors/torassa/english/pdf/45.pdf)
+3.  A. Tobla, *Linear, Radial & Scalar Magnitudes* (2015). [PDF](https://atorassa.github.io/physics-authors/tobla/english/pdf/01.pdf)
+4.  A. Tobla, *A Reformulation of Classical Mechanics* (2024). [PDF](https://atorassa.github.io/physics-authors/tobla/english/pdf/02.pdf)
