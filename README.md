@@ -1,6 +1,9 @@
+
 # Scalar Magnitudes, Definitions, and Relations
 
 > **Scalar Magnitudes** conserve their value and form under transformations of translation and rotation, or changes between coordinate systems (Cartesian, polar, spherical, etc.).
+
+---
 
 ## Definitions
 
@@ -22,56 +25,129 @@ The **scalar position** ($\tau\_{ij}$), **scalar velocity** ($\dot{\tau}\_{ij}$)
 | :--- | :--- | :--- |
 | **Position** ($\tau\_{ij}$) | $\tau\_{ij} = \frac{1}{2} \vec{r}\_{ij} \cdot \vec{r}\_{ij} = \frac{1}{2} (\vec{r}\_i - \vec{r}\_j) \cdot (\vec{r}\_i - \vec{r}\_j)$ | *(Fundamental definition)* |
 | **Velocity** ($\dot{\tau}\_{ij}$) | $\dot{\tau}\_{ij} = \vec{v}\_{ij} \cdot \vec{r}\_{ij} = (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{r}\_i - \vec{r}\_j)$ | $\dot{\tau}\_{ij} = \frac{d(\tau\_{ij})}{dt}$ |
-| **Acceleration** ($\ddot{\tau}\_{ij}$) | $\ddot{\tau}\_{ij} = \vec{a}\_{ij} \cdot \vec{r}\_{ij} + \vec{v}\_{ij} \cdot \vec{v}\_{ij} = (\vec{a}\_i - \vec{a}\_j) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{v}\_i - \vec{v}\_j)$ | $\ddot{\tau}\_{ij} = \frac{d^2(\tau\_{ij})}{dt^2}$ |
+| **Acceleration** ($\ddot{\tau}\_{ij}$) | $\ddot{\tau}\_{ij} = \vec{a}\_{ij} \cdot \vec{r}\_{ij} + \vec{v}\_{ij} \cdot \vec{v}\_{ij}$ | $\ddot{\tau}\_{ij} = \frac{d^2(\tau\_{ij})}{dt^2}$ |
+
+---
 
 ## Fundamental Relations
 
 ### Radial Magnitudes Relations
 
-The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **radial magnitudes** are given by:
+The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **radial magnitudes** ($r\_{ij}$) are given by:
 
 | Scalar Magnitude | Relation with Radial Magnitudes |
 | :--- | :--- |
-| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij} r\_{ij}$ |
-| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = \dot{r}\_{ij} r\_{ij}$ |
-| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = \ddot{r}\_{ij} r\_{ij} + \dot{r}\_{ij} \dot{r}\_{ij}$ |
+| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij}^2$ |
+| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = r\_{ij} \dot{r}\_{ij}$ |
+| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = r\_{ij} \ddot{r}\_{ij} + \dot{r}\_{ij}^2$ |
 
 ### Polar Magnitudes Relations
 
-The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **polar magnitudes** are given by:
+The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **polar magnitudes** ($r\_{ij}$) are given by:
 
 | Scalar Magnitude | Relation with Polar Magnitudes |
 | :--- | :--- |
-| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij} r\_{ij}$ |
-| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = \dot{r}\_{ij} r\_{ij}$ |
-| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = \ddot{r}\_{ij} r\_{ij} + \dot{r}\_{ij} \dot{r}\_{ij}$ |
+| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij}^2$ |
+| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = r\_{ij} \dot{r}\_{ij}$ |
+| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = r\_{ij} \ddot{r}\_{ij} + \dot{r}\_{ij}^2$ |
 
 ### Cylindrical Magnitudes Relations
 
-The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **cylindrical magnitudes** are given by:
+The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **cylindrical magnitudes** ($r\_{ij}$) are given by:
 
 | Scalar Magnitude | Relation with Cylindrical Magnitudes |
 | :--- | :--- |
-| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij} r\_{ij}$ |
-| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = \dot{r}\_{ij} r\_{ij}$ |
-| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = \ddot{r}\_{ij} r\_{ij} + \dot{r}\_{ij} \dot{r}\_{ij}$ |
+| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij}^2$ |
+| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = r\_{ij} \dot{r}\_{ij}$ |
+| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = r\_{ij} \ddot{r}\_{ij} + \dot{r}\_{ij}^2$ |
 
 ### Circular Magnitudes Relations
 
-The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using circular magnitudes are given by:
+The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **circular magnitudes** ($r\_{ij}$) are given by:
 
 | Scalar Magnitude | Relation with Circular Magnitudes |
 | :--- | :--- |
-| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij} r\_{ij}$ |
-| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = \dot{r}\_{ij} r\_{ij}$ |
-| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = \ddot{r}\_{ij} r\_{ij} + \dot{r}\_{ij} \dot{r}\_{ij}$ |
+| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij}^2$ |
+| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = r\_{ij} \dot{r}\_{ij}$ |
+| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = r\_{ij} \ddot{r}\_{ij} + \dot{r}\_{ij}^2$ |
 
 ### Spherical Magnitudes Relations
 
-The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using spherical magnitudes ($r\_{ij}$) are given by:
+The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **spherical magnitudes** ($r\_{ij}$) are given by:
 
 | Scalar Magnitude | Relation with Spherical Magnitudes |
 | :--- | :--- |
-| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij} r\_{ij}$ |
-| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = \dot{r}\_{ij} r\_{ij}$ |
-| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = \ddot{r}\_{ij} r\_{ij} + \dot{r}\_{ij} \dot{r}\_{ij}$ |
+| $\tau\_{ij}$ | $\tau\_{ij} = \frac{1}{2} r\_{ij}^2$ |
+| $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = r\_{ij} \dot{r}\_{ij}$ |
+| $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = r\_{ij} \ddot{r}\_{ij} + \dot{r}\_{ij}^2$ |
+
+---
+
+## Scalar Invariance Demonstrations
+
+### 1. Scalar Position Invariance ($\tau_{ij}$)
+
+The Scalar Position $\tau_{ij}$ is invariant under rotation and translation because the magnitude of the relative vector is preserved.
+
+$$
+\tau_{ij} = \frac{1}{2} (\vec{r}_i - \vec{r}_j) \cdot (\vec{r}_i - \vec{r}_j)
+$$
+$$
+\tau'_{ij} = \frac{1}{2} (\vec{r}'_i - \vec{r}'_j) \cdot (\vec{r}'_i - \vec{r}'_j)
+$$
+$$
+(\vec{r}_i - \vec{r}_j) = (\vec{r}'_i - \vec{r}'_j)
+$$
+$$
+\tau'_{ij} = \frac{1}{2} (\vec{r}_i - \vec{r}_j) \cdot (\vec{r}_i - \vec{r}_j)
+$$
+$$
+\therefore \tau'_{ij} = \tau_{ij}
+$$
+
+---
+
+### 2. Scalar Velocity Invariance ($\dot{\tau}_{ij}$)
+
+The Scalar Velocity $\dot{\tau}_{ij}$ is invariant because the cross-product generated by the angular velocity ($\vec{\omega}$) is perpendicular to the relative position vector, resulting in a zero scalar product.
+
+$$
+\dot{\tau}_{ij} = (\vec{v}_i - \vec{v}_j) \cdot (\vec{r}_i - \vec{r}_j)
+$$
+$$
+\dot{\tau}'_{ij} = \big( (\vec{v}_i - \vec{v}_j) + \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \big) \cdot (\vec{r}_i - \vec{r}_j)
+$$
+$$
+\dot{\tau}'_{ij} = (\vec{v}_i - \vec{v}_j) \cdot (\vec{r}_i - \vec{r}_j)
+$$
+$$
+\therefore \dot{\tau}'_{ij} = \dot{\tau}_{ij}
+$$
+
+---
+
+### 3. Scalar Acceleration Invariance ($\ddot{\tau}_{ij}$)
+
+The Scalar Acceleration $\ddot{\tau}_{ij}$ is invariant because all inertial terms (Angular Acceleration, Coriolis, and Centrifugal) mutually cancel due to the properties of the vector and scalar products.
+
+$$
+\ddot{\tau}_{ij} = (\vec{a}_i - \vec{a}_j) \cdot (\vec{r}_i - \vec{r}_j) + (\vec{v}_i - \vec{v}_j) \cdot (\vec{v}_i - \vec{v}_j)
+$$
+$$
+\ddot{\tau}'_{ij} = \left[ (\vec{a}_i - \vec{a}_j) + \dot{\vec{\omega}} \times (\vec{r}_i - \vec{r}_j) + \vec{\omega} \times \left( \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right) + 2 \vec{\omega} \times (\vec{v}_i - \vec{v}_j) \right] \cdot (\vec{r}_i - \vec{r}_j) + \left[ (\vec{v}_i - \vec{v}_j) + \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right] \cdot \left[ (\vec{v}_i - \vec{v}_j) + \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right]
+$$
+$$
+\text{Since } (\dot{\vec{\omega}} \times (\vec{r}_i - \vec{r}_j)) \cdot (\vec{r}_i - \vec{r}_j) = 0 \text{ (Angular acceleration term cancels)}
+$$
+$$
+\text{Since } 2 (\vec{\omega} \times (\vec{v}_i - \vec{v}_j)) \cdot (\vec{r}_i - \vec{r}_j) + 2 (\vec{v}_i - \vec{v}_j) \cdot (\vec{\omega} \times (\vec{r}_i - \vec{r}_j)) = 0 \text{ (Coriolis terms cancel)}
+$$
+$$
+\text{Since } (\vec{\omega} \times (\vec{\omega} \times (\vec{r}_i - \vec{r}_j))) \cdot (\vec{r}_i - \vec{r}_j) + (\vec{\omega} \times (\vec{r}_i - \vec{r}_j)) \cdot (\vec{\omega} \times (\vec{r}_i - \vec{r}_j)) = 0 \text{ (Centrifugal terms cancel)}
+$$
+$$
+\ddot{\tau}'_{ij} = (\vec{a}_i - \vec{a}_j) \cdot (\vec{r}_i - \vec{r}_j) + (\vec{v}_i - \vec{v}_j) \cdot (\vec{v}_i - \vec{v}_j)
+$$
+$$
+\therefore \ddot{\tau}'_{ij} = \ddot{\tau}_{ij}
+$$
