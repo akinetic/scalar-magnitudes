@@ -106,7 +106,8 @@ $\tau\_{ij} = \frac{1}{2} (\vec{r}\_i - \vec{r}\_j) \cdot (\vec{r}\_i - \vec{r}\
 
 $\tau'\_{ij} = \frac{1}{2} (\vec{r}'\_i - \vec{r}'\_j) \cdot (\vec{r}'\_i - \vec{r}'\_j)$
 
-$(\vec{r}\_i - \vec{r}\_j) = (\vec{r}'\_i - \vec{r}'\_j)$
+$\text{Since } (\vec{r}\_i - \vec{r}\_j) = (\vec{r}'\_i - \vec{r}'\_j)$
+$\text{Because } \vec{r}'\_i = \vec{r}\_i - \vec{r}\_{O'} \text{ and } \vec{r}'\_j = \vec{r}\_j - \vec{r}\_{O'} \text{ (The relative position vector is independent of the frame origin.)}$
 
 $\tau'\_{ij} = \frac{1}{2} (\vec{r}\_i - \vec{r}\_j) \cdot (\vec{r}\_i - \vec{r}\_j)$
 
@@ -121,6 +122,9 @@ The Scalar Velocity $\dot{\tau}\_{ij}$ is invariant because the cross-product ge
 $\dot{\tau}\_{ij} = (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{r}\_i - \vec{r}\_j)$
 
 $\dot{\tau}'\_{ij} = \big( (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \big) \cdot (\vec{r}\_i - \vec{r}\_j)$
+
+$\text{Since } \left( - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right) \cdot (\vec{r}\_i - \vec{r}\_j) = 0 \text{ (The rotational term is orthogonal to the relative position vector.)}$
+$\text{Because } (\vec{A} \times \vec{B}) \cdot \vec{B} = 0 \text{ (Property of the Scalar Triple Product)}$
 
 $\dot{\tau}'\_{ij} = (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{r}\_i - \vec{r}\_j)$
 
@@ -137,10 +141,13 @@ $\ddot{\tau}\_{ij} = (\vec{a}\_i - \vec{a}\_j) \cdot (\vec{r}\_i - \vec{r}\_j) +
 $\ddot{\tau}'\_{ij} = \left[ (\vec{a}\_i - \vec{a}\_j) - \dot{\vec{\omega}} \times (\vec{r}\_i - \vec{r}\_j) + \vec{\omega} \times \left( \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right) - 2 \vec{\omega} \times (\vec{v}\_i - \vec{v}\_j) \right] \cdot (\vec{r}\_i - \vec{r}\_j) + \left[ (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right] \cdot \left[ (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right]$
 
 $\text{Since } - (\dot{\vec{\omega}} \times (\vec{r}\_i - \vec{r}\_j)) \cdot (\vec{r}\_i - \vec{r}\_j) = 0 \text{ (Angular acceleration term cancels)}$
+$\text{Because } (\vec{A} \times \vec{B}) \cdot \vec{B} = 0 \text{ (Property of the Scalar Triple Product)}$
 
 $\text{Since } - 2 (\vec{\omega} \times (\vec{v}\_i - \vec{v}\_j)) \cdot (\vec{r}\_i - \vec{r}\_j) - 2 (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) = 0 \text{ (Coriolis terms cancel)}$
+$\text{Because } \vec{A} \cdot (\vec{B} \times \vec{C}) = (\vec{A} \times \vec{B}) \cdot \vec{C} \text{ (Cyclic Permutation Property of the Scalar Triple Product)}$
 
 $\text{Since } + (\vec{\omega} \times (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j))) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) \cdot (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) = 0 \text{ (Centrifugal terms cancel)}$
+$\text{Because } (\vec{A} \times (\vec{B} \times \vec{C})) \cdot \vec{C} = - (\vec{B} \times \vec{C}) \cdot (\vec{B} \times \vec{C}) \text{ (Vector Triple Product Identity)}$
 
 $\ddot{\tau}'\_{ij} = (\vec{a}\_i - \vec{a}\_j) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{v}\_i - \vec{v}\_j)$
 
