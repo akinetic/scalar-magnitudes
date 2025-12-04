@@ -84,6 +84,20 @@ The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expres
 
 ## Scalar Invariance Demonstrations
 
+### 0. Vectorial Transformations (Absolute)
+
+The vectorial position ($\vec{r}'\_i$), vectorial velocity ($\vec{v}'\_i$), and vectorial acceleration ($\vec{a}'\_i$) of a particle $i$ with respect to a system $S'$, whose origin $O'$ is at the vectorial position $\vec{r}\_{O'}$ with respect to another System $S$, are given by:
+
+$\vec{r}'\_i = \vec{r}\_i - \vec{r}\_{O'}$
+
+$\vec{v}'\_i = \vec{v}\_i - \vec{v}\_{O'} - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_{O'})$
+
+$\vec{a}'\_i = \vec{a}\_i - \vec{a}\_{O'} - 2 \vec{\omega} \times \vec{v}'\_i - \vec{\omega} \times (\vec{\omega} \times \vec{r}'\_i) - \dot{\vec{\omega}} \times \vec{r}'\_i$
+
+Where $\vec{r}\_i$, $\vec{v}\_i$, and $\vec{a}\_i$ are the vectorial position, velocity, and acceleration of particle $i$ with respect to System $S$; and $\vec{\omega}$ and $\dot{\vec{\omega}}$ are the angular velocity and angular acceleration of System $S'$ with respect to System $S$.
+
+---
+
 ### 1. Scalar Position Invariance ($\tau\_{ij}$)
 
 The Scalar Position $\tau\_{ij}$ is invariant under rotation and translation because the magnitude of the relative vector is preserved.
@@ -106,7 +120,7 @@ The Scalar Velocity $\dot{\tau}\_{ij}$ is invariant because the cross-product ge
 
 $\dot{\tau}\_{ij} = (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{r}\_i - \vec{r}\_j)$
 
-$\dot{\tau}'\_{ij} = \big( (\vec{v}\_i - \vec{v}\_j) + \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \big) \cdot (\vec{r}\_i - \vec{r}\_j)$
+$\dot{\tau}'\_{ij} = \big( (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \big) \cdot (\vec{r}\_i - \vec{r}\_j)$
 
 $\dot{\tau}'\_{ij} = (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{r}\_i - \vec{r}\_j)$
 
@@ -120,13 +134,13 @@ The Scalar Acceleration $\ddot{\tau}\_{ij}$ is invariant because all inertial te
 
 $\ddot{\tau}\_{ij} = (\vec{a}\_i - \vec{a}\_j) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{v}\_i - \vec{v}\_j)$
 
-$\ddot{\tau}'\_{ij} = \left[ (\vec{a}\_i - \vec{a}\_j) + \dot{\vec{\omega}} \times (\vec{r}\_i - \vec{r}\_j) + \vec{\omega} \times \left( \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right) + 2 \vec{\omega} \times (\vec{v}\_i - \vec{v}\_j) \right] \cdot (\vec{r}\_i - \vec{r}\_j) + \left[ (\vec{v}\_i - \vec{v}\_j) + \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right] \cdot \left[ (\vec{v}\_i - \vec{v}\_j) + \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right]$
+$\ddot{\tau}'\_{ij} = \left[ (\vec{a}\_i - \vec{a}\_j) - \dot{\vec{\omega}} \times (\vec{r}\_i - \vec{r}\_j) + \vec{\omega} \times \left( \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right) - 2 \vec{\omega} \times (\vec{v}\_i - \vec{v}\_j) \right] \cdot (\vec{r}\_i - \vec{r}\_j) + \left[ (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right] \cdot \left[ (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right]$
 
-$\text{Since } (\dot{\vec{\omega}} \times (\vec{r}\_i - \vec{r}\_j)) \cdot (\vec{r}\_i - \vec{r}\_j) = 0 \text{ (Angular acceleration term cancels)}$
+$\text{Since } - (\dot{\vec{\omega}} \times (\vec{r}\_i - \vec{r}\_j)) \cdot (\vec{r}\_i - \vec{r}\_j) = 0 \text{ (Angular acceleration term cancels)}$
 
-$\text{Since } 2 (\vec{\omega} \times (\vec{v}\_i - \vec{v}\_j)) \cdot (\vec{r}\_i - \vec{r}\_j) + 2 (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) = 0 \text{ (Coriolis terms cancel)}$
+$\text{Since } - 2 (\vec{\omega} \times (\vec{v}\_i - \vec{v}\_j)) \cdot (\vec{r}\_i - \vec{r}\_j) - 2 (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) = 0 \text{ (Coriolis terms cancel)}$
 
-$\text{Since } (\vec{\omega} \times (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j))) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) \cdot (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) = 0 \text{ (Centrifugal terms cancel)}$
+$\text{Since } + (\vec{\omega} \times (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j))) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) \cdot (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) = 0 \text{ (Centrifugal terms cancel)}$
 
 $\ddot{\tau}'\_{ij} = (\vec{a}\_i - \vec{a}\_j) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{v}\_i - \vec{v}\_j)$
 
