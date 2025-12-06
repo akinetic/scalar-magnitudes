@@ -42,6 +42,12 @@ $\vec{a}'\_i = \vec{a}\_i - \vec{a}\_{O'} - 2 \vec{\omega} \times (\vec{v}\_i - 
 
 Where $\vec{r}\_i$, $\vec{v}\_i$, and $\vec{a}\_i$ are the vectorial position, velocity, and acceleration of particle $i$ with respect to System $S$; and $\vec{\omega}$ and $\dot{\vec{\omega}}$ are the angular velocity and angular acceleration of System $S'$ with respect to System $S$.
 
+**Note**
+
+If $\vec{m}'\_i = \vec{n}\_i$ then:
+
+$\dfrac{d(\vec{m}'\_i)}{dt} = \dfrac{d(\vec{n}\_i)}{dt} - \vec{\omega} \times \vec{n}\_i$
+
 ---
 
 ### 1. Scalar Position Invariance ($\tau\_{ij}$)
