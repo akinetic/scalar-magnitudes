@@ -67,6 +67,8 @@ The Scalar Velocity $\dot{\tau}\_{ij}$ is invariant because the cross-product ge
 
 $\dot{\tau}\_{ij} = (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{r}\_i - \vec{r}\_j)$
 
+$\dot{\tau}'\_{ij} = (\vec{v}'\_i - \vec{v}'\_j) \cdot (\vec{r}'\_i - \vec{r}'\_j)$
+
 $\dot{\tau}'\_{ij} = \big( (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \big) \cdot (\vec{r}\_i - \vec{r}\_j)$
 
 $\text{Since } \left( - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right) \cdot (\vec{r}\_i - \vec{r}\_j) = 0 \text{ (The rotational term is orthogonal to the relative position vector.)}$
@@ -83,6 +85,8 @@ $\therefore \dot{\tau}'\_{ij} = \dot{\tau}\_{ij}$
 The Scalar Acceleration $\ddot{\tau}\_{ij}$ is invariant because all inertial terms (Angular Acceleration, Coriolis, and Centrifugal) mutually cancel due to the properties of the vector and scalar products.
 
 $\ddot{\tau}\_{ij} = (\vec{a}\_i - \vec{a}\_j) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{v}\_i - \vec{v}\_j)$
+
+$\ddot{\tau}'\_{ij} = (\vec{a}'\_i - \vec{a}'\_j) \cdot (\vec{r}'\_i - \vec{r}'\_j) + (\vec{v}'\_i - \vec{v}'\_j) \cdot (\vec{v}'\_i - \vec{v}'\_j)$
 
 $\ddot{\tau}'\_{ij} = \left[ (\vec{a}\_i - \vec{a}\_j) - \dot{\vec{\omega}} \times (\vec{r}\_i - \vec{r}\_j) + \vec{\omega} \times \left( \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right) - 2 \vec{\omega} \times (\vec{v}\_i - \vec{v}\_j) \right] \cdot (\vec{r}\_i - \vec{r}\_j) + \left[ (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right] \cdot \left[ (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right]$
 
