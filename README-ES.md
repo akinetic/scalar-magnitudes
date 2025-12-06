@@ -67,6 +67,8 @@ La Velocidad Escalar $\dot{\tau}\_{ij}$ es invariante porque el producto cruz ge
 
 $\dot{\tau}\_{ij} = (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{r}\_i - \vec{r}\_j)$
 
+$\dot{\tau}'\_{ij} = (\vec{v}'\_i - \vec{v}'\_j) \cdot (\vec{r}'\_i - \vec{r}'\_j)$
+
 $\dot{\tau}'\_{ij} = \big( (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \big) \cdot (\vec{r}\_i - \vec{r}\_j)$
 
 $\text{Dado que } \left( - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right) \cdot (\vec{r}\_i - \vec{r}\_j) = 0 \text{ (El término rotacional es ortogonal al vector de posición relativa.)}$
@@ -83,6 +85,8 @@ $\therefore \dot{\tau}'\_{ij} = \dot{\tau}\_{ij}$
 La Aceleración Escalar $\ddot{\tau}\_{ij}$ es invariante porque todos los términos inerciales (Aceleración Angular, Coriolis y Centrífuga) se anulan mutuamente debido a las propiedades de los productos vectoriales y escalares.
 
 $\ddot{\tau}\_{ij} = (\vec{a}\_i - \vec{a}\_j) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{v}\_i - \vec{v}\_j)$
+
+$\ddot{\tau}'\_{ij} = (\vec{a}'\_i - \vec{a}'\_j) \cdot (\vec{r}'\_i - \vec{r}'\_j) + (\vec{v}'\_i - \vec{v}'\_j) \cdot (\vec{v}'\_i - \vec{v}'\_j)$
 
 $\ddot{\tau}'\_{ij} = \left[ (\vec{a}\_i - \vec{a}\_j) - \dot{\vec{\omega}} \times (\vec{r}\_i - \vec{r}\_j) + \vec{\omega} \times \left( \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right) - 2 \vec{\omega} \times (\vec{v}\_i - \vec{v}\_j) \right] \cdot (\vec{r}\_i - \vec{r}\_j) + \left[ (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right] \cdot \left[ (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right]$
 
