@@ -38,7 +38,7 @@ $\vec{r}'\_i = \vec{r}\_i - \vec{r}\_{O'}$
 
 $\vec{v}'\_i = \vec{v}\_i - \vec{v}\_{O'} - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_{O'})$
 
-$\vec{a}'\_i = \vec{a}\_i - \vec{a}\_{O'} - 2 \vec{\omega} \times \vec{v}'\_i + \vec{\omega} \times (\vec{\omega} \times \vec{r}'\_i) - \dot{\vec{\omega}} \times \vec{r}'\_i$
+$\vec{a}'\_i = \vec{a}\_i - \vec{a}\_{O'} - 2 \vec{\omega} \times (\vec{v}\_i - \vec{v}\_{O'}) + \vec{\omega} \times (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_{O'})) - \dot{\vec{\omega}} \times (\vec{r}\_i - \vec{r}\_{O'})$
 
 Donde $\vec{r}\_i$, $\vec{v}\_i$, y $\vec{a}\_i$ son la posición, velocidad y aceleración vectoriales de la partícula $i$ con respecto al Sistema $S$; y $\vec{\omega}$ y $\dot{\vec{\omega}}$ son la velocidad angular y la aceleración angular del Sistema $S'$ con respecto al Sistema $S$.
 
