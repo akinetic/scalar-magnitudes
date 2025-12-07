@@ -172,3 +172,4 @@ Las magnitudes escalares ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) exp
 2.  A. Torassa, *Una Reformulación de la Mecánica Clásica* (2014). [PDF](https://atorassa.github.io/physics-authors/torassa/spanish/pdf/45.pdf)
 3.  A. Tobla, *Magnitudes Lineales, Radiales & Escalares* (2015). [PDF](https://atorassa.github.io/physics-authors/tobla/spanish/pdf/01.pdf)
 4.  A. Tobla, *Una Reformulación de la Mecánica Clásica* (2024). [PDF](https://atorassa.github.io/physics-authors/tobla/spanish/pdf/02.pdf)
+
