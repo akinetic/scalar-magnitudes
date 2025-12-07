@@ -1,6 +1,6 @@
 # Scalar Magnitudes, Definitions, and Relations
 
-> **Scalar Magnitudes are quantities that conserve their value and form under transformations of translation and rotation, or changes between coordinate systems (Cartesian, polar, spherical, etc.).**
+> **Scalar Magnitudes are invariant quantities that conserve their value and form under transformations of translation and rotation, or changes between coordinate systems (Cartesian, polar, spherical, etc.).**
 
 ---
 
