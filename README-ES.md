@@ -22,8 +22,8 @@ La **posición escalar** ($\tau\_{ij}$), la **velocidad escalar** ($\dot{\tau}\_
 
 | Magnitud Escalar | Definición | Derivación |
 | :--- | :--- | :--- |
-| **Posición** ($\tau\_{ij}$) | $\tau\_{ij} = \frac{1}{2} \vec{r}\_{ij} \cdot \vec{r}\_{ij} = \frac{1}{2} (\vec{r}\_i - \vec{r}\_j) \cdot (\vec{r}\_i - \vec{r}\_j)$ | *(Definición fundamental)* |
-| **Velocidad** ($\dot{\tau}\_{ij}$) | $\dot{\tau}\_{ij} = \vec{v}\_{ij} \cdot \vec{r}\_{ij} = (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{r}\_i - \vec{r}\_j)$ | $\dot{\tau}\_{ij} = \frac{d(\tau\_{ij})}{dt}$ |
+| **Posición** ($\tau\_{ij}$) | $\tau\_{ij} = \frac{1}{2} \vec{r}\_{ij} \cdot \vec{r}\_{ij}$ | *(Definición fundamental)* |
+| **Velocidad** ($\dot{\tau}\_{ij}$) | $\dot{\tau}\_{ij} = \vec{v}\_{ij} \cdot \vec{r}\_{ij}$ | $\dot{\tau}\_{ij} = \frac{d(\tau\_{ij})}{dt}$ |
 | **Aceleración** ($\ddot{\tau}\_{ij}$) | $\ddot{\tau}\_{ij} = \vec{a}\_{ij} \cdot \vec{r}\_{ij} + \vec{v}\_{ij} \cdot \vec{v}\_{ij}$ | $\ddot{\tau}\_{ij} = \frac{d^2(\tau\_{ij})}{dt^2}$ |
 
 ---
@@ -94,16 +94,17 @@ $\ddot{\tau}\_{ij} = (\vec{a}\_i - \vec{a}\_j) \cdot (\vec{r}\_i - \vec{r}\_j) +
 
 $\ddot{\tau}'\_{ij} = (\vec{a}'\_i - \vec{a}'\_j) \cdot (\vec{r}'\_i - \vec{r}'\_j) + (\vec{v}'\_i - \vec{v}'\_j) \cdot (\vec{v}'\_i - \vec{v}'\_j)$
 
-$\ddot{\tau}'\_{ij} = \left[ (\vec{a}\_i - \vec{a}\_j) - \dot{\vec{\omega}} \times (\vec{r}\_i - \vec{r}\_j) + \vec{\omega} \times \left( \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right) - 2 \vec{\omega} \times (\vec{v}\_i - \vec{v}\_j) \right] \cdot (\vec{r}\_i - \vec{r}\_j) + \left[ (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right] \cdot \left[ (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right]$
+$\ddot{\tau}'\_{ij} = \left[ (\vec{a}\_i - \vec{a}\_j) - 2 \vec{\omega} \times (\vec{v}\_i - \vec{v}\_j) + \vec{\omega} \times \left( \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right) - \dot{\vec{\omega}} \times (\vec{r}\_i - \vec{r}\_j) \right] \cdot (\vec{r}\_i - \vec{r}\_j) + \left[ (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right] \cdot \left[ (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right]$
 
 $\text{Dado que } - (\dot{\vec{\omega}} \times (\vec{r}\_i - \vec{r}\_j)) \cdot (\vec{r}\_i - \vec{r}\_j) = 0 \text{ (El término de aceleración angular se anula)}$
 $\text{Porque } (\vec{A} \times \vec{B}) \cdot \vec{B} = 0 \text{ (Propiedad del Triple Producto Escalar)}$
 
 $\text{Dado que } - 2 (\vec{\omega} \times (\vec{v}\_i - \vec{v}\_j)) \cdot (\vec{r}\_i - \vec{r}\_j) - 2 (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) = 0 \text{ (Los términos de Coriolis se anulan)}$
-$\text{Porque } \vec{A} \cdot (\vec{B} \times \vec{C}) = (\vec{A} \times \vec{B}) \cdot \vec{C} \text{ (Propiedad de Permutación Cíclica del Triple Producto Escalar)}$
+$\text{Porque } (\vec{A} \times \vec{B}) \cdot \vec{C} = \vec{A} \cdot (\vec{B} \times \vec{C}) \text{ (Propiedad de Permutación Cíclica del Triple Producto Escalar)}$
 
-$\text{Dado que } + (\vec{\omega} \times (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j))) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) \cdot (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) = 0 \text{ (Los términos centrífugos se anulan)}$
-$\text{Porque } (\vec{A} \times (\vec{B} \times \vec{C})) \cdot \vec{C} = - (\vec{B} \times \vec{C}) \cdot (\vec{B} \times \vec{C}) \text{ (Identidad del Triple Producto Vectorial)}$
+$\text{Dado que } + (\vec{\omega} \times (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j))) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) \cdot (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) = 0 \text{ (Los términos centrífugos se anulan) } [\vec{P} \cdot (\vec{r}\_i - \vec{r}\_j) + E = 0]$
+$\text{Porque } \vec{P} = \vec{A} \times (\vec{B} \times \vec{C}) = (\vec{A} \cdot \vec{C}) \ \vec{B} - (\vec{A} \cdot \vec{B}) \ \vec{C} \text{ (Triple Producto Vectorial)}$
+$\text{Porque } E = (\vec{A} \times \vec{B}) \cdot (\vec{A} \times \vec{B}) = (\vec{A} \cdot \vec{A}) \ (\vec{B} \cdot \vec{B}) - (\vec{A} \cdot \vec{B})^2 \text{ (Identidad de Lagrange)}$
 
 $\ddot{\tau}'\_{ij} = (\vec{a}\_i - \vec{a}\_j) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{v}\_i - \vec{v}\_j)$
 
