@@ -132,7 +132,7 @@
                 <tr>
                     <td>Position ($\vec{r}_{ij}$)</td>
                     <td>$\vec{r}_{ij} = (\vec{r}_i - \vec{r}_j)$</td>
-                    <td>Fundamental definition</td>
+                    <td>(Fundamental definition)</td>
                 </tr>
                 <tr>
                     <td>Velocity ($\vec{v}_{ij}$)</td>
@@ -161,12 +161,12 @@
             <tbody>
                 <tr>
                     <td>Position ($\tau_{ij}$)</td>
-                    <td>$\tau_{ij} = \frac{1}{2} \vec{r}_{ij} \cdot \vec{r}_{ij} = \frac{1}{2} (\vec{r}_i - \vec{r}_j) \cdot (\vec{r}_i - \vec{r}_j)$</td>
-                    <td>Fundamental definition</td>
+                    <td>$\tau_{ij} = \frac{1}{2} \vec{r}_{ij} \cdot \vec{r}_{ij}$</td>
+                    <td>(Fundamental definition)</td>
                 </tr>
                 <tr>
                     <td>Velocity ($\dot{\tau}_{ij}$)</td>
-                    <td>$\dot{\tau}_{ij} = \vec{v}_{ij} \cdot \vec{r}_{ij} = (\vec{v}_i - \vec{v}_j) \cdot (\vec{r}_i - \vec{r}_j)$</td>
+                    <td>$\dot{\tau}_{ij} = \vec{v}_{ij} \cdot \vec{r}_{ij}$</td>
                     <td>$\dot{\tau}_{ij} = \frac{d(\tau_{ij})}{dt}$</td>
                 </tr>
                 <tr>
@@ -259,7 +259,7 @@
             $\ddot{\tau}'_{ij} = (\vec{a}'_i - \vec{a}'_j) \cdot (\vec{r}'_i - \vec{r}'_j) + (\vec{v}'_i - \vec{v}'_j) \cdot (\vec{v}'_i - \vec{v}'_j)$
         </div>
         <div class="math-block">
-            $\ddot{\tau}'_{ij} = \left[ (\vec{a}_i - \vec{a}_j) - \dot{\vec{\omega}} \times (\vec{r}_i - \vec{r}_j) + \vec{\omega} \times \left( \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right) - 2 \vec{\omega} \times (\vec{v}_i - \vec{v}_j) \right] \cdot (\vec{r}_i - \vec{r}_j) + \left[ (\vec{v}_i - \vec{v}_j) - \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right] \cdot \left[ (\vec{v}_i - \vec{v}_j) - \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right]$
+            $\ddot{\tau}'_{ij} = \left[ (\vec{a}_i - \vec{a}_j) - 2 \vec{\omega} \times (\vec{v}_i - \vec{v}_j) + \vec{\omega} \times \left( \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right) - \dot{\vec{\omega}} \times (\vec{r}_i - \vec{r}_j) \right] \cdot (\vec{r}_i - \vec{r}_j) + \left[ (\vec{v}_i - \vec{v}_j) - \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right] \cdot \left[ (\vec{v}_i - \vec{v}_j) - \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right]$
         </div>
         <div class="math-block">
             $\text{Since } - (\dot{\vec{\omega}} \times (\vec{r}_i - \vec{r}_j)) \cdot (\vec{r}_i - \vec{r}_j) = 0 \text{ (Angular acceleration term cancels)}$
@@ -271,13 +271,16 @@
             $\text{Since } - 2 (\vec{\omega} \times (\vec{v}_i - \vec{v}_j)) \cdot (\vec{r}_i - \vec{r}_j) - 2 (\vec{v}_i - \vec{v}_j) \cdot (\vec{\omega} \times (\vec{r}_i - \vec{r}_j)) = 0 \text{ (Coriolis terms cancel)}$
         </div>
         <div class="math-block">
-            $\text{Because } \vec{A} \cdot (\vec{B} \times \vec{C}) = (\vec{A} \times \vec{B}) \cdot \vec{C} \text{ (Cyclic Permutation Property of the Scalar Triple Product)}$
+            $\text{Because } (\vec{A} \times \vec{B}) \cdot \vec{C} = \vec{A} \cdot (\vec{B} \times \vec{C}) \text{ (Cyclic Permutation Property of the Scalar Triple Product)}$
         </div>
         <div class="math-block">
-            $\text{Since } + (\vec{\omega} \times (\vec{\omega} \times (\vec{r}_i - \vec{r}_j))) \cdot (\vec{r}_i - \vec{r}_j) + (\vec{\omega} \times (\vec{r}_i - \vec{r}_j)) \cdot (\vec{\omega} \times (\vec{r}_i - \vec{r}_j)) = 0 \text{ (Centrifugal terms cancel)}$
+            $\text{Since } + (\vec{\omega} \times (\vec{\omega} \times (\vec{r}_i - \vec{r}_j))) \cdot (\vec{r}_i - \vec{r}_j) + (\vec{\omega} \times (\vec{r}_i - \vec{r}_j)) \cdot (\vec{\omega} \times (\vec{r}_i - \vec{r}_j)) = 0 \text{ (Centrifugal terms cancel) } [\vec{P} \cdot (\vec{r}_i - \vec{r}_j) + E = 0]$
         </div>
         <div class="math-block">
-            $\text{Because } (\vec{A} \times (\vec{B} \times \vec{C})) \cdot \vec{C} = - (\vec{B} \times \vec{C}) \cdot (\vec{B} \times \vec{C}) \text{ (Vector Triple Product Identity)}$
+            $\text{Because } \vec{P} = \vec{A} \times (\vec{B} \times \vec{C}) = (\vec{A} \cdot \vec{C}) \ \vec{B} - (\vec{A} \cdot \vec{B}) \ \vec{C} \text{ (Vector Triple Product)}$
+        </div>
+        <div class="math-block">
+            $\text{Because } E = (\vec{A} \times \vec{B}) \cdot (\vec{A} \times \vec{B}) = (\vec{A} \cdot \vec{A}) \ (\vec{B} \cdot \vec{B}) - (\vec{A} \cdot \vec{B})^2 \text{ (Lagrange's Identity)}$
         </div>
         <div class="math-block">
             $\ddot{\tau}'_{ij} = (\vec{a}_i - \vec{a}_j) \cdot (\vec{r}_i - \vec{r}_j) + (\vec{v}_i - \vec{v}_j) \cdot (\vec{v}_i - \vec{v}_j)$
