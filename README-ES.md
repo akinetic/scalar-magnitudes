@@ -1,6 +1,6 @@
 # Magnitudes Escalares, Definiciones y Relaciones
 
-> **Las Magnitudes Escalares son magnitudes que conservan su valor y forma bajo transformaciones de traslación y rotación, o cambios entre sistemas de coordenadas (Cartesianas, polares, esféricas, etc.).**
+> **Las Magnitudes Escalares son magnitudes invariantes que conservan su valor y forma bajo transformaciones de traslación y rotación, o cambios entre sistemas de coordenadas (Cartesianas, polares, esféricas, etc.).**
 
 ---
 
