@@ -1,6 +1,6 @@
 # Scalar Magnitudes, Definitions, and Relations
 
-> **Scalar Magnitudes are invariant quantities that conserve their value and form under transformations of translation and rotation, or changes between coordinate systems (Cartesian, polar, spherical, etc.).**
+> **Scalar Magnitudes are invariant scalar quantities that conserve their value and form under transformations of translation and rotation, or changes between coordinate systems (Cartesian, polar, spherical, etc.).**
 
 ---
 
@@ -59,6 +59,7 @@ $\tau\_{ij} = \frac{1}{2} (\vec{r}\_i - \vec{r}\_j) \cdot (\vec{r}\_i - \vec{r}\
 $\tau'\_{ij} = \frac{1}{2} (\vec{r}'\_i - \vec{r}'\_j) \cdot (\vec{r}'\_i - \vec{r}'\_j)$
 
 $\text{Since } (\vec{r}\_i - \vec{r}\_j) = (\vec{r}'\_i - \vec{r}'\_j)$
+
 $\text{Because } \vec{r}'\_i = \vec{r}\_i - \vec{r}\_{O'} \text{ and } \vec{r}'\_j = \vec{r}\_j - \vec{r}\_{O'} \text{ (The relative position vector is independent of the frame origin.)}$
 
 $\tau'\_{ij} = \frac{1}{2} (\vec{r}\_i - \vec{r}\_j) \cdot (\vec{r}\_i - \vec{r}\_j)$
@@ -78,6 +79,7 @@ $\dot{\tau}'\_{ij} = (\vec{v}'\_i - \vec{v}'\_j) \cdot (\vec{r}'\_i - \vec{r}'\_
 $\dot{\tau}'\_{ij} = \big( (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \big) \cdot (\vec{r}\_i - \vec{r}\_j)$
 
 $\text{Since } \left( - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right) \cdot (\vec{r}\_i - \vec{r}\_j) = 0 \text{ (The rotational term is orthogonal to the relative position vector.)}$
+
 $\text{Because } (\vec{A} \times \vec{B}) \cdot \vec{B} = 0 \text{ (Property of the Scalar Triple Product)}$
 
 $\dot{\tau}'\_{ij} = (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{r}\_i - \vec{r}\_j)$
@@ -97,13 +99,19 @@ $\ddot{\tau}'\_{ij} = (\vec{a}'\_i - \vec{a}'\_j) \cdot (\vec{r}'\_i - \vec{r}'\
 $\ddot{\tau}'\_{ij} = \left[ (\vec{a}\_i - \vec{a}\_j) - 2 \vec{\omega} \times (\vec{v}\_i - \vec{v}\_j) + \vec{\omega} \times \left( \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right) - \dot{\vec{\omega}} \times (\vec{r}\_i - \vec{r}\_j) \right] \cdot (\vec{r}\_i - \vec{r}\_j) + \left[ (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right] \cdot \left[ (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right]$
 
 $\text{Since } - (\dot{\vec{\omega}} \times (\vec{r}\_i - \vec{r}\_j)) \cdot (\vec{r}\_i - \vec{r}\_j) = 0 \text{ (Angular acceleration term cancels)}$
+
 $\text{Because } (\vec{A} \times \vec{B}) \cdot \vec{B} = 0 \text{ (Property of the Scalar Triple Product)}$
 
 $\text{Since } - 2 (\vec{\omega} \times (\vec{v}\_i - \vec{v}\_j)) \cdot (\vec{r}\_i - \vec{r}\_j) - 2 (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) = 0 \text{ (Coriolis terms cancel)}$
+
 $\text{Because } (\vec{A} \times \vec{B}) \cdot \vec{C} = \vec{A} \cdot (\vec{B} \times \vec{C}) \text{ (Cyclic Permutation Property of the Scalar Triple Product)}$
 
-$\text{Since } + (\vec{\omega} \times (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j))) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) \cdot (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) = 0 \text{ (Centrifugal terms cancel) } [\vec{P} \cdot (\vec{r}\_i - \vec{r}\_j) + E = 0]$
+$\text{Since } + (\vec{\omega} \times (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j))) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) \cdot (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) = 0 \text{ (Centrifugal terms cancel)}$
+
+$\text{Since } + \vec{P} \cdot (\vec{r}\_i - \vec{r}\_j) + E = 0$
+
 $\text{Because } \vec{P} = \vec{A} \times (\vec{B} \times \vec{C}) = (\vec{A} \cdot \vec{C}) \ \vec{B} - (\vec{A} \cdot \vec{B}) \ \vec{C} \text{ (Vector Triple Product)}$
+
 $\text{Because } E = (\vec{A} \times \vec{B}) \cdot (\vec{A} \times \vec{B}) = (\vec{A} \cdot \vec{A}) \ (\vec{B} \cdot \vec{B}) - (\vec{A} \cdot \vec{B})^2 \text{ (Lagrange's Identity)}$
 
 $\ddot{\tau}'\_{ij} = (\vec{a}\_i - \vec{a}\_j) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{v}\_i - \vec{v}\_j)$
