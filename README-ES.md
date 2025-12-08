@@ -1,6 +1,6 @@
 # Magnitudes Escalares, Definiciones y Relaciones
 
-> **Las Magnitudes Escalares son magnitudes invariantes que conservan su valor y forma bajo transformaciones de traslación y rotación, o cambios entre sistemas de coordenadas (Cartesianas, polares, esféricas, etc.).**
+> **Las Magnitudes Escalares son magnitudes escalares invariantes que conservan su valor y forma bajo transformaciones de traslación y rotación, o cambios entre sistemas de coordenadas (Cartesianas, polares, esféricas, etc.).**
 
 ---
 
@@ -102,7 +102,8 @@ $\text{Porque } (\vec{A} \times \vec{B}) \cdot \vec{B} = 0 \text{ (Propiedad del
 $\text{Dado que } - 2 (\vec{\omega} \times (\vec{v}\_i - \vec{v}\_j)) \cdot (\vec{r}\_i - \vec{r}\_j) - 2 (\vec{v}\_i - \vec{v}\_j) \cdot (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) = 0 \text{ (Los términos de Coriolis se anulan)}$
 $\text{Porque } (\vec{A} \times \vec{B}) \cdot \vec{C} = \vec{A} \cdot (\vec{B} \times \vec{C}) \text{ (Propiedad de Permutación Cíclica del Triple Producto Escalar)}$
 
-$\text{Dado que } + (\vec{\omega} \times (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j))) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) \cdot (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) = 0 \text{ (Los términos centrífugos se anulan) } [\vec{P} \cdot (\vec{r}\_i - \vec{r}\_j) + E = 0]$
+$\text{Dado que } + (\vec{\omega} \times (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j))) \cdot (\vec{r}\_i - \vec{r}\_j) + (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) \cdot (\vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) = 0 \text{ (Los términos centrífugos se anulan)}$
+$\text{Dado que } + \vec{P} \cdot (\vec{r}\_i - \vec{r}\_j) + E = 0$
 $\text{Porque } \vec{P} = \vec{A} \times (\vec{B} \times \vec{C}) = (\vec{A} \cdot \vec{C}) \ \vec{B} - (\vec{A} \cdot \vec{B}) \ \vec{C} \text{ (Triple Producto Vectorial)}$
 $\text{Porque } E = (\vec{A} \times \vec{B}) \cdot (\vec{A} \times \vec{B}) = (\vec{A} \cdot \vec{A}) \ (\vec{B} \cdot \vec{B}) - (\vec{A} \cdot \vec{B})^2 \text{ (Identidad de Lagrange)}$
 
@@ -172,4 +173,3 @@ Las magnitudes escalares ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) exp
 2.  A. Torassa, *Una Reformulación de la Mecánica Clásica* (2014). [PDF](https://atorassa.github.io/physics-authors/torassa/spanish/pdf/45.pdf)
 3.  A. Tobla, *Magnitudes Lineales, Radiales & Escalares* (2015). [PDF](https://atorassa.github.io/physics-authors/tobla/spanish/pdf/01.pdf)
 4.  A. Tobla, *Una Reformulación de la Mecánica Clásica* (2024). [PDF](https://atorassa.github.io/physics-authors/tobla/spanish/pdf/02.pdf)
-
