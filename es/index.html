@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magnitudes Escalares, Definiciones y Relaciones</title>
+    <title>Magnitudes Escalares</title>
     <link rel="icon" href="favicon.svg">
 
     <style>
@@ -108,7 +108,7 @@
 <body>
     <div class="container">
 
-        <h1>Magnitudes Escalares, Definiciones y Relaciones</h1>
+        <h1>Magnitudes Escalares</h1>
 
         <blockquote>
             Las Magnitudes Escalares son magnitudes escalares invariantes que conservan su valor y forma ante transformaciones de traslación y rotación, o cambios entre sistemas de coordenadas (cartesianas, polares, esféricas, etc.).
@@ -119,7 +119,7 @@
         <h2>I. Definiciones</h2>
 
         <h3>Magnitudes Vectoriales</h3>
-        <p>La posición vectorial ($\vec{r}_{ij}$), la velocidad vectorial ($\vec{v}_{ij}$), y la aceleración vectorial ($\vec{a}_{ij}$) de dos partículas "i" y "j" están dadas por:</p>
+        <p>La posición vectorial ($\vec{r}_{ij}$), la velocidad vectorial ($\vec{v}_{ij}$), y la aceleración vectorial ($\vec{a}_{ij}$) de dos partículas $i$ y $j$ están dadas por:</p>
 
         <table>
             <thead>
@@ -149,7 +149,7 @@
         </table>
 
         <h3>Magnitudes Escalares</h3>
-        <p>La posición escalar ($\tau_{ij}$), la velocidad escalar ($\dot{\tau}_{ij}$), y la aceleración escalar ($\ddot{\tau}_{ij}$) de dos partículas "i" y "j" están dadas por:</p>
+        <p>La posición escalar ($\tau_{ij}$), la velocidad escalar ($\dot{\tau}_{ij}$), y la aceleración escalar ($\ddot{\tau}_{ij}$) de dos partículas $i$ y $j$ están dadas por:</p>
 
         <table>
             <thead>
@@ -183,7 +183,7 @@
         <h2>II. Demostraciones de Invarianza Escalar</h2>
 
         <h3>0. Transformaciones Vectoriales (Absolutas)</h3>
-        <p>La posición vectorial ($\vec{r}'_i$), la velocidad vectorial ($\vec{v}'_i$), y la aceleración vectorial ($\vec{a}'_i$) de una partícula $i$ respecto a un sistema $S'$, cuyo origen $O'$ se encuentra en la posición vectorial $\vec{r}_{O'}$ respecto a otro Sistema $S$, están dadas por:</p>
+        <p>La posición vectorial ($\vec{r}'_i$), la velocidad vectorial ($\vec{v}'_i$), y la aceleración vectorial ($\vec{a}'_i$) de una partícula $i$ respecto a un Sistema de Referencia $S'$, cuyo origen $O'$ se encuentra en la posición vectorial $\vec{r}_{O'}$ respecto a otro Sistema de Referencia $S$, están dadas por:</p>
 
         <div class="math-block">
             $\vec{r}'_i = \vec{r}_i - \vec{r}_{O'}$
@@ -192,9 +192,9 @@
             $\vec{v}'_i = \vec{v}_i - \vec{v}_{O'} - \vec{\omega} \times (\vec{r}_i - \vec{r}_{O'})$
         </div>
         <div class="math-block">
-            $\vec{a}'_i = \vec{a}_i - \vec{a}_{O'} - 2 \vec{\omega} \times (\vec{v}_i - \vec{v}_{O'}) + \vec{\omega} \times (\vec{\omega} \times (\vec{r}_i - \vec{r}_{O'})) - \dot{\vec{\omega}} \times (\vec{r}_i - \vec{r}_{O'}) $
+            $\vec{a}'_i = \vec{a}_i - \vec{a}_{O'} - 2 \vec{\omega} \times (\vec{v}_i - \vec{v}_{O'}) + \vec{\omega} \times (\vec{\omega} \times (\vec{r}_i - \vec{r}_{O'})) - \vec{\alpha} \times (\vec{r}_i - \vec{r}_{O'}) $
         </div>
-        <p>Donde $\vec{r}_i$, $\vec{v}_i$, y $\vec{a}_i$ son la posición, velocidad y aceleración vectorial de la partícula $i$ respecto al Sistema $S$; y $\vec{\omega}$ y $\dot{\vec{\omega}}$ son la velocidad angular y aceleración angular del Sistema $S'$ respecto al Sistema $S$.</p>
+        <p>Donde $\vec{r}_i$, $\vec{v}_i$, y $\vec{a}_i$ son la posición, velocidad y aceleración vectorial de la partícula $i$ respecto al Sistema $S$; y $\vec{\omega}$ y $\vec{\alpha}$ son la velocidad angular y aceleración angular del Sistema $S'$ respecto al Sistema $S$.</p>
         <p><strong>Nota</strong></p><p>Si $\vec{m}'_i = \vec{n}_i$ entonces:</p><p>$\dfrac{d(\vec{m}'_i)}{dt} = \dfrac{d(\vec{n}_i)}{dt} - \vec{\omega} \times \vec{n}_i$</p>
 
         <hr>
@@ -212,7 +212,7 @@
             $\text{Dado que } (\vec{r}_i - \vec{r}_j) = (\vec{r}'_i - \vec{r}'_j)$
         </div>
         <div class="math-block">
-            $\text{Porque } \vec{r}'_i = \vec{r}_i - \vec{r}_{O'} \text{ y } \vec{r}'_j = \vec{r}_j - \vec{r}_{O'} \text{ (El vector de posición relativa es independiente del origen del marco.)}$
+            $\text{Porque } \vec{r}'_i = \vec{r}_i - \vec{r}_{O'} \text{ y } \vec{r}'_j = \vec{r}_j - \vec{r}_{O'} \text{ (El vector de posición relativa es independiente del origen del Sistema.)}$
         </div>
         <div class="math-block">
             $\tau'_{ij} = \frac{1}{2} (\vec{r}_i - \vec{r}_j) \cdot (\vec{r}_i - \vec{r}_j)$
@@ -233,10 +233,10 @@
             $\dot{\tau}'_{ij} = (\vec{v}'_i - \vec{v}'_j) \cdot (\vec{r}'_i - \vec{r}'_j)$
         </div>
         <div class="math-block">
-            $\dot{\tau}'_{ij} = \big( (\vec{v}_i - \vec{v}_j) - \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \big) \cdot (\vec{r}_i - \vec{r}_j)$
+            $\dot{\tau}'_{ij} = \left( (\vec{v}_i - \vec{v}_j) - \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right) \cdot (\vec{r}_i - \vec{r}_j)$
         </div>
         <div class="math-block">
-            $\text{Dado que } \left( - \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right) \cdot (\vec{r}_i - \vec{r}_j) = 0 \text{ (El término de rotación es ortogonal al vector de posición relativa.)}$
+            $\text{Dado que } (- \vec{\omega} \times (\vec{r}_i - \vec{r}_j)) \cdot (\vec{r}_i - \vec{r}_j) = 0 \text{ (El término de rotación es ortogonal al vector de posición relativa.)}$
         </div>
         <div class="math-block">
             $\text{Porque } (\vec{A} \times \vec{B}) \cdot \vec{B} = 0 \text{ (Propiedad del Producto Triple Escalar)}$
@@ -260,10 +260,10 @@
             $\ddot{\tau}'_{ij} = (\vec{a}'_i - \vec{a}'_j) \cdot (\vec{r}'_i - \vec{r}'_j) + (\vec{v}'_i - \vec{v}'_j) \cdot (\vec{v}'_i - \vec{v}'_j)$
         </div>
         <div class="math-block">
-            $\ddot{\tau}'_{ij} = \left[ (\vec{a}_i - \vec{a}_j) - 2 \vec{\omega} \times (\vec{v}_i - \vec{v}_j) + \vec{\omega} \times \left( \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right) - \dot{\vec{\omega}} \times (\vec{r}_i - \vec{r}_j) \right] \cdot (\vec{r}_i - \vec{r}_j) + \left[ (\vec{v}_i - \vec{v}_j) - \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right] \cdot \left[ (\vec{v}_i - \vec{v}_j) - \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right]$
+            $\ddot{\tau}'_{ij} = \left[ (\vec{a}_i - \vec{a}_j) - 2 \vec{\omega} \times (\vec{v}_i - \vec{v}_j) + \vec{\omega} \times (\vec{\omega} \times (\vec{r}_i - \vec{r}_j)) - \vec{\alpha} \times (\vec{r}_i - \vec{r}_j) \right] \cdot (\vec{r}_i - \vec{r}_j) + \left[ (\vec{v}_i - \vec{v}_j) - \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right] \cdot \left[ (\vec{v}_i - \vec{v}_j) - \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right]$
         </div>
         <div class="math-block">
-            $\text{Dado que } - (\dot{\vec{\omega}} \times (\vec{r}_i - \vec{r}_j)) \cdot (\vec{r}_i - \vec{r}_j) = 0 \text{ (El término de aceleración angular se cancela)}$
+            $\text{Dado que } - (\vec{\alpha} \times (\vec{r}_i - \vec{r}_j)) \cdot (\vec{r}_i - \vec{r}_j) = 0 \text{ (El término de aceleración angular se cancela)}$
         </div>
         <div class="math-block">
             $\text{Porque } (\vec{A} \times \vec{B}) \cdot \vec{B} = 0 \text{ (Propiedad del Producto Triple Escalar)}$
