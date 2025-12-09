@@ -78,7 +78,7 @@ $\dot{\tau}'\_{ij} = (\vec{v}'\_i - \vec{v}'\_j) \cdot (\vec{r}'\_i - \vec{r}'\_
 
 $\dot{\tau}'\_{ij} = \left( (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right) \cdot (\vec{r}\_i - \vec{r}\_j)$
 
-$\text{Since } (-\ \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) \cdot (\vec{r}\_i - \vec{r}\_j) = 0 \text{ (The rotational term is orthogonal to the relative position vector.)}$
+$\text{Since } (- \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) \cdot (\vec{r}\_i - \vec{r}\_j) = 0 \text{ (The rotational term is orthogonal to the relative position vector.)}$
 
 $\text{Because } (\vec{A} \times \vec{B}) \cdot \vec{B} = 0 \text{ (Property of the Scalar Triple Product)}$
 
