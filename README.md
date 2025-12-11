@@ -6,25 +6,25 @@
 
 ## I. Definitions
 
-### Vectorial Magnitudes
+### 0. Vectorial Magnitudes
 
 The **vectorial position** ($\vec{r}\_{ij}$), **vectorial velocity** ($\vec{v}\_{ij}$), and **vectorial acceleration** ($\vec{a}\_{ij}$) of two particles $i$ and $j$ are given by:
 
 | Vectorial Magnitude | Definition | Derivation |
 | :--- | :--- | :--- |
-| **Position** ($\vec{r}\_{ij}$) | $\vec{r}\_{ij} = (\vec{r}\_i - \vec{r}\_j)$ | *(Fundamental definition)* |
-| **Velocity** ($\vec{v}\_{ij}$) | $\vec{v}\_{ij} = (\vec{v}\_i - \vec{v}\_j)$ | $\vec{v}\_{ij} = \frac{d(\vec{r}\_{ij})}{dt}$ |
-| **Acceleration** ($\vec{a}\_{ij}$) | $\vec{a}\_{ij} = (\vec{a}\_i - \vec{a}\_j)$ | $\vec{a}\_{ij} = \frac{d^2(\vec{r}\_{ij})}{dt^2}$ |
+| **Position** ($\vec{r}\_{ij}$) | $\vec{r}\_{ij} \doteq (\vec{r}\_i - \vec{r}\_j)$ | *(Fundamental definition)* |
+| **Velocity** ($\vec{v}\_{ij}$) | $\vec{v}\_{ij} \doteq (\vec{v}\_i - \vec{v}\_j)$ | $\vec{v}\_{ij} \doteq \frac{d(\vec{r}\_{ij})}{dt}$ |
+| **Acceleration** ($\vec{a}\_{ij}$) | $\vec{a}\_{ij} \doteq (\vec{a}\_i - \vec{a}\_j)$ | $\vec{a}\_{ij} \doteq \frac{d^2(\vec{r}\_{ij})}{dt^2}$ |
 
-### Scalar Magnitudes
+### 1. Scalar Magnitudes
 
 The **scalar position** ($\tau\_{ij}$), **scalar velocity** ($\dot{\tau}\_{ij}$), and **scalar acceleration** ($\ddot{\tau}\_{ij}$) of two particles $i$ and $j$ are given by:
 
 | Scalar Magnitude | Definition | Derivation |
 | :--- | :--- | :--- |
-| **Position** ($\tau\_{ij}$) | $\tau\_{ij} = \frac{1}{2} \vec{r}\_{ij} \cdot \vec{r}\_{ij}$ | *(Fundamental definition)* |
-| **Velocity** ($\dot{\tau}\_{ij}$) | $\dot{\tau}\_{ij} = \vec{v}\_{ij} \cdot \vec{r}\_{ij}$ | $\dot{\tau}\_{ij} = \frac{d(\tau\_{ij})}{dt}$ |
-| **Acceleration** ($\ddot{\tau}\_{ij}$) | $\ddot{\tau}\_{ij} = \vec{a}\_{ij} \cdot \vec{r}\_{ij} + \vec{v}\_{ij} \cdot \vec{v}\_{ij}$ | $\ddot{\tau}\_{ij} = \frac{d^2(\tau\_{ij})}{dt^2}$ |
+| **Position** ($\tau\_{ij}$) | $\tau\_{ij} \doteq \frac{1}{2} \vec{r}\_{ij} \cdot \vec{r}\_{ij}$ | *(Fundamental definition)* |
+| **Velocity** ($\dot{\tau}\_{ij}$) | $\dot{\tau}\_{ij} \doteq \vec{v}\_{ij} \cdot \vec{r}\_{ij}$ | $\dot{\tau}\_{ij} \doteq \frac{d(\tau\_{ij})}{dt}$ |
+| **Acceleration** ($\ddot{\tau}\_{ij}$) | $\ddot{\tau}\_{ij} \doteq \vec{a}\_{ij} \cdot \vec{r}\_{ij} + \vec{v}\_{ij} \cdot \vec{v}\_{ij}$ | $\ddot{\tau}\_{ij} \doteq \frac{d^2(\tau\_{ij})}{dt^2}$ |
 
 ---
 
@@ -78,7 +78,7 @@ $\dot{\tau}'\_{ij} = (\vec{v}'\_i - \vec{v}'\_j) \cdot (\vec{r}'\_i - \vec{r}'\_
 
 $\dot{\tau}'\_{ij} = \left( (\vec{v}\_i - \vec{v}\_j) - \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j) \right) \cdot (\vec{r}\_i - \vec{r}\_j)$
 
-$\text{Since } (- \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) \cdot (\vec{r}\_i - \vec{r}\_j) = 0 \text{ (The rotational term is orthogonal to the relative position vector.)}$
+$\text{Since } (-\ \vec{\omega} \times (\vec{r}\_i - \vec{r}\_j)) \cdot (\vec{r}\_i - \vec{r}\_j) = 0 \text{ (The rotational term is orthogonal to the relative position vector.)}$
 
 $\text{Because } (\vec{A} \times \vec{B}) \cdot \vec{B} = 0 \text{ (Property of the Scalar Triple Product)}$
 
@@ -122,7 +122,7 @@ $\therefore \ddot{\tau}'\_{ij} = \ddot{\tau}\_{ij}$
 
 ## III. Fundamental Relations
 
-### Radial Magnitudes Relations
+### 1. Radial Magnitudes Relations
 
 The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **radial magnitudes** ($r\_{ij}$) are given by:
 
@@ -132,7 +132,7 @@ The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expres
 | $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = r\_{ij} \dot{r}\_{ij}$ |
 | $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = r\_{ij} \ddot{r}\_{ij} + \dot{r}\_{ij}^2$ |
 
-### Polar Magnitudes Relations
+### 2. Polar Magnitudes Relations
 
 The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **polar magnitudes** ($r\_{ij}$) are given by:
 
@@ -142,7 +142,7 @@ The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expres
 | $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = r\_{ij} \dot{r}\_{ij}$ |
 | $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = r\_{ij} \ddot{r}\_{ij} + \dot{r}\_{ij}^2$ |
 
-### Cylindrical Magnitudes Relations
+### 3. Cylindrical Magnitudes Relations
 
 The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **cylindrical magnitudes** ($r\_{ij}$) are given by:
 
@@ -152,7 +152,7 @@ The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expres
 | $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = r\_{ij} \dot{r}\_{ij}$ |
 | $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = r\_{ij} \ddot{r}\_{ij} + \dot{r}\_{ij}^2$ |
 
-### Circular Magnitudes Relations
+### 4. Circular Magnitudes Relations
 
 The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **circular magnitudes** ($r\_{ij}$) are given by:
 
@@ -162,7 +162,7 @@ The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expres
 | $\dot{\tau}\_{ij}$ | $\dot{\tau}\_{ij} = r\_{ij} \dot{r}\_{ij}$ |
 | $\ddot{\tau}\_{ij}$ | $\ddot{\tau}\_{ij} = r\_{ij} \ddot{r}\_{ij} + \dot{r}\_{ij}^2$ |
 
-### Spherical Magnitudes Relations
+### 5. Spherical Magnitudes Relations
 
 The scalar magnitudes ($\tau\_{ij}, \dot{\tau}\_{ij}, \ddot{\tau}\_{ij}$) expressed using **spherical magnitudes** ($r\_{ij}$) are given by:
 
