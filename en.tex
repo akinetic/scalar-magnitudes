@@ -1,0 +1,237 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={180.0mm,270.0mm}}
+\geometry{totalwidth=159.0mm,totalheight=234.0mm}
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+%\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue,bookmarksopen=true}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Scalar Magnitudes}}
+\hypersetup{pdfauthor={Alex Kinetic}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\begin{document}
+
+\enlargethispage{+0.00em}
+
+\noindent \textbf{{\Large SCALAR MAGNITUDES}}
+
+\bigskip \bigskip
+
+\normalsize
+
+\noindent \texttt{Abstract}: Scalar Magnitudes are invariant scalar quantities that conserve their value and form under transformations of translation and rotation, or changes between coordinate systems (Cartesian, polar, spherical, etc.)
+
+\vspace{-0.60em}
+
+\par \bigskip {\subsection*{I. Definitions}}\addcontentsline{toc}{subsection}{I. Definitions}
+
+\par \bigskip {\subsubsection*{0. Vectorial Magnitudes}}\addcontentsline{toc}{subsubsection}{0. Vectorial Magnitudes}
+
+\noindent The vectorial position ($\vec{r}_{ij}$), vectorial velocity ($\vec{v}_{ij}$), and vectorial acceleration ($\vec{a}_{ij}$) of two particles $i$ and $j$ are given by:
+
+\bigskip
+
+\noindent \begin{tabular}{lll}
+Vectorial Magnitude & Definition & Derivation \vspace{+0.75em} \\
+Position ($\vec{r}_{ij}$) & $\vec{r}_{ij} \doteq (\vec{r}_i - \vec{r}_j)$ & (\textit{Fundamental definition}) \vspace{+0.75em} \\
+Velocity ($\vec{v}_{ij}$) & $\vec{v}_{ij} \doteq (\vec{v}_i - \vec{v}_j)$ & $\vec{v}_{ij} \doteq d(\vec{r}_{ij}) / dt$ \vspace{+0.75em} \\
+Acceleration ($\vec{a}_{ij}$) & $\vec{a}_{ij} \doteq (\vec{a}_i - \vec{a}_j)$ & $\vec{a}_{ij} \doteq d^2(\vec{r}_{ij}) / dt^2$
+\end{tabular}
+
+\bigskip
+
+\par \bigskip {\subsubsection*{1. Scalar Magnitudes}}\addcontentsline{toc}{subsubsection}{1. Scalar Magnitudes}
+
+\noindent The scalar position ($\tau_{ij}$), scalar velocity ($\dot{\tau}_{ij}$), and scalar acceleration ($\ddot{\tau}_{ij}$) of two particles $i$ and $j$ are given by:
+
+\bigskip
+
+\noindent \begin{tabular}{lll}
+Scalar Magnitude & Definition & Derivation \vspace{+0.75em} \\
+Position ($\tau_{ij}$) & $\tau_{ij} \doteq \frac{1}{2} \vec{r}_{ij} \cdot \vec{r}_{ij}$ & (\textit{Fundamental definition}) \vspace{+0.75em} \\
+Velocity ($\dot{\tau}_{ij}$) & $\dot{\tau}_{ij} \doteq \vec{v}_{ij} \cdot \vec{r}_{ij}$ & $\dot{\tau}_{ij} \doteq d(\tau_{ij}) / dt$ \vspace{+0.75em} \\
+Acceleration ($\ddot{\tau}_{ij}$) & $\ddot{\tau}_{ij} \doteq \vec{a}_{ij} \cdot \vec{r}_{ij} + \vec{v}_{ij} \cdot \vec{v}_{ij}$ & $\ddot{\tau}_{ij} \doteq d^2(\tau_{ij}) / dt^2$
+\end{tabular}
+
+\bigskip
+
+\par \bigskip {\subsection*{II. Scalar Invariance Demonstrations}}\addcontentsline{toc}{subsection}{II. Scalar Invariance Demonstrations}
+
+\par \bigskip {\subsubsection*{0. Vectorial Transformations (Absolute)}}\addcontentsline{toc}{subsubsection}{0. Vectorial Transformations (Absolute)}
+
+\noindent The vectorial position ($\vec{r}\hspace{+0.09em}'\hspace{-0.36em}_i$), vectorial velocity ($\vec{v}\hspace{+0.03em}'\hspace{-0.18em}_i$), and vectorial acceleration ($\vec{a}'_i$) of a particle $i$ with respect to a Reference Frame $S'$, whose origin $O'$ is at the vectorial position $\vec{r}_{O'}$ with respect to another Reference Frame $S$, are given by:
+
+\bigskip $\vec{r}\hspace{+0.09em}'\hspace{-0.36em}_i = \vec{r}_i - \vec{r}_{O'}$
+
+\bigskip $\vec{v}\hspace{+0.03em}'\hspace{-0.18em}_i = \vec{v}_i - \vec{v}_{O'} - \vec{\omega} \times (\vec{r}_i - \vec{r}_{O'})$
+
+\bigskip $\vec{a}'_i = \vec{a}_i - \vec{a}_{O'} - 2 \vec{\omega} \times (\vec{v}_i - \vec{v}_{O'}) + \vec{\omega} \times (\vec{\omega} \times (\vec{r}_i - \vec{r}_{O'})) - \vec{\alpha} \times (\vec{r}_i - \vec{r}_{O'})$
+
+\bigskip
+
+\noindent Where $\vec{r}_i$, $\vec{v}_i$, and $\vec{a}_i$ are the vectorial position, velocity, and acceleration of particle $i$ with respect to Frame $S$; and $\vec{\omega}$ and $\vec{\alpha}$ are the angular velocity and angular acceleration of Frame $S'$ with respect to Frame $S$.
+
+\bigskip
+
+\noindent \textbf{Note}
+
+\bigskip
+
+\noindent If $\vec{m}'_i = \vec{n}_i$ then:
+
+\bigskip \noindent $\dfrac{d(\vec{m}'_i)}{dt} = \dfrac{d(\vec{n}_i)}{dt} - \vec{\omega} \times \vec{n}_i$
+
+\newpage
+
+\par \bigskip {\subsubsection*{1. Scalar Position Invariance ($\tau_{ij}$)}}\addcontentsline{toc}{subsubsection}{1. Scalar Position Invariance ($\tau_{ij}$)}
+
+\noindent The Scalar Position $\tau_{ij}$ is invariant under rotation and translation because the magnitude of the relative vector is preserved.
+
+\bigskip $\tau_{ij} = \frac{1}{2} (\vec{r}_i - \vec{r}_j) \cdot (\vec{r}_i - \vec{r}_j)$
+
+\bigskip $\tau'_{ij} = \frac{1}{2} (\vec{r}\hspace{+0.09em}'\hspace{-0.36em}_i - \vec{r}\hspace{+0.09em}'\hspace{-0.36em}_j) \cdot (\vec{r}\hspace{+0.09em}'\hspace{-0.36em}_i - \vec{r}\hspace{+0.09em}'\hspace{-0.36em}_j)$
+
+\bigskip $\text{Since } (\vec{r}_i - \vec{r}_j) = (\vec{r}\hspace{+0.09em}'\hspace{-0.36em}_i - \vec{r}\hspace{+0.09em}'\hspace{-0.36em}_j)$
+
+\bigskip $\text{Because } \vec{r}\hspace{+0.09em}'\hspace{-0.36em}_i = \vec{r}_i - \vec{r}_{O'} \text{ and } \vec{r}\hspace{+0.09em}'\hspace{-0.36em}_j = \vec{r}_j - \vec{r}_{O'}$
+
+\bigskip $\text{(The relative position vector is independent of the Frame's origin.)}$
+
+\bigskip $\tau'_{ij} = \frac{1}{2} (\vec{r}_i - \vec{r}_j) \cdot (\vec{r}_i - \vec{r}_j)$
+
+\bigskip $\text{Therefore: } \tau'_{ij} = \tau_{ij}$
+
+\par \bigskip {\subsubsection*{2. Scalar Velocity Invariance ($\dot{\tau}_{ij}$)}}\addcontentsline{toc}{subsubsection}{2. Scalar Velocity Invariance ($\dot{\tau}_{ij}$)}
+
+\noindent The Scalar Velocity $\dot{\tau}_{ij}$ is invariant because the cross-product generated by the angular velocity ($\vec{\omega}$) is perpendicular to the relative position vector, resulting in a zero scalar product.
+
+\bigskip $\dot{\tau}_{ij} = (\vec{v}_i - \vec{v}_j) \cdot (\vec{r}_i - \vec{r}_j)$
+
+\bigskip $\dot{\tau}'_{ij} = (\vec{v}\hspace{+0.03em}'\hspace{-0.18em}_i - \vec{v}\hspace{+0.03em}'\hspace{-0.18em}_j) \cdot (\vec{r}\hspace{+0.09em}'\hspace{-0.36em}_i - \vec{r}\hspace{+0.09em}'\hspace{-0.36em}_j)$
+
+\bigskip $\dot{\tau}'_{ij} = \left( (\vec{v}_i - \vec{v}_j) - \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right) \cdot (\vec{r}_i - \vec{r}_j)$
+
+\bigskip $\text{Since } (-\ \vec{\omega} \times (\vec{r}_i - \vec{r}_j)) \cdot (\vec{r}_i - \vec{r}_j) = 0$
+
+\bigskip $\text{(The rotational term is orthogonal to the relative position vector.)}$
+
+\bigskip $\text{Because } (\vec{A} \times \vec{B}) \cdot \vec{B} = 0 \text{ (Property of the Scalar Triple Product)}$
+
+\bigskip $\dot{\tau}'_{ij} = (\vec{v}_i - \vec{v}_j) \cdot (\vec{r}_i - \vec{r}_j)$
+
+\bigskip $\text{Therefore: } \dot{\tau}'_{ij} = \dot{\tau}_{ij}$
+
+\par \bigskip {\subsubsection*{3. Scalar Acceleration Invariance ($\ddot{\tau}_{ij}$)}}\addcontentsline{toc}{subsubsection}{3. Scalar Acceleration Invariance ($\ddot{\tau}_{ij}$)}
+
+\noindent The Scalar Acceleration $\ddot{\tau}_{ij}$ is invariant because all inertial terms (Angular Acceleration, Coriolis, and Centrifugal) mutually cancel due to the properties of the vector and scalar products.
+
+\bigskip $\ddot{\tau}_{ij} = (\vec{a}_i - \vec{a}_j) \cdot (\vec{r}_i - \vec{r}_j) + (\vec{v}_i - \vec{v}_j) \cdot (\vec{v}_i - \vec{v}_j)$
+
+\bigskip $\ddot{\tau}'_{ij} = (\vec{a}'_i - \vec{a}'_j) \cdot (\vec{r}\hspace{+0.09em}'\hspace{-0.36em}_i - \vec{r}\hspace{+0.09em}'\hspace{-0.36em}_j) + (\vec{v}\hspace{+0.03em}'\hspace{-0.18em}_i - \vec{v}\hspace{+0.03em}'\hspace{-0.18em}_j) \cdot (\vec{v}\hspace{+0.03em}'\hspace{-0.18em}_i - \vec{v}\hspace{+0.03em}'\hspace{-0.18em}_j)$
+
+\bigskip $\ddot{\tau}'_{ij} = \left[ (\vec{a}_i - \vec{a}_j) - 2 \vec{\omega} \times (\vec{v}_i - \vec{v}_j) + \vec{\omega} \times (\vec{\omega} \times (\vec{r}_i - \vec{r}_j)) - \vec{\alpha} \times (\vec{r}_i - \vec{r}_j) \right] \cdot (\vec{r}_i - \vec{r}_j)$
+
+\bigskip $+ \left[ (\vec{v}_i - \vec{v}_j) - \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right] \cdot \left[ (\vec{v}_i - \vec{v}_j) - \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right]$
+
+\bigskip $\text{Since } - (\vec{\alpha} \times (\vec{r}_i - \vec{r}_j)) \cdot (\vec{r}_i - \vec{r}_j) = 0 \text{ (Angular acceleration term cancels)}$
+
+\bigskip $\text{Because } (\vec{A} \times \vec{B}) \cdot \vec{B} = 0 \text{ (Property of the Scalar Triple Product)}$
+
+\newpage
+
+\bigskip $\text{Since } - 2\,(\vec{\omega} \times (\vec{v}_i - \vec{v}_j)) \cdot (\vec{r}_i - \vec{r}_j) - 2\,(\vec{v}_i - \vec{v}_j) \cdot (\vec{\omega} \times (\vec{r}_i - \vec{r}_j)) = 0 \text{ (Coriolis terms cancel)}$
+
+\bigskip $\text{Because } (\vec{A} \times \vec{B}) \cdot \vec{C} = \vec{A} \cdot (\vec{B} \times \vec{C}) \text{ (Cyclic Permutation Property of the Scalar Triple Product)}$
+
+\bigskip $\text{Since } + (\vec{\omega} \times (\vec{\omega} \times (\vec{r}_i - \vec{r}_j))) \cdot (\vec{r}_i - \vec{r}_j) + (\vec{\omega} \times (\vec{r}_i - \vec{r}_j)) \cdot (\vec{\omega} \times (\vec{r}_i - \vec{r}_j)) = 0 \text{ (Centrifugal terms cancel)}$
+
+\bigskip $\text{Since } + \vec{P} \cdot (\vec{r}_i - \vec{r}_j) + E = 0$
+
+\bigskip $\text{Because } \vec{P} = \vec{A} \times (\vec{B} \times \vec{C}) = (\vec{A} \cdot \vec{C}) \ \vec{B} - (\vec{A} \cdot \vec{B}) \ \vec{C} \text{ (Vector Triple Product)}$
+
+\bigskip $\text{Because } E = (\vec{A} \times \vec{B}) \cdot (\vec{A} \times \vec{B}) = (\vec{A} \cdot \vec{A}) \ (\vec{B} \cdot \vec{B}) - (\vec{A} \cdot \vec{B})^2 \text{ (Lagrange's Identity)}$
+
+\bigskip $\ddot{\tau}'_{ij} = (\vec{a}_i - \vec{a}_j) \cdot (\vec{r}_i - \vec{r}_j) + (\vec{v}_i - \vec{v}_j) \cdot (\vec{v}_i - \vec{v}_j)$
+
+\bigskip $\text{Therefore: } \ddot{\tau}'_{ij} = \ddot{\tau}_{ij}$
+
+\par \smallskip {\subsection*{III. Fundamental Relations}}\addcontentsline{toc}{subsection}{III. Fundamental Relations}
+
+\bigskip
+
+\noindent The scalar magnitudes ($\tau_{ij}, \dot{\tau}_{ij}, \ddot{\tau}_{ij}$) expressed using radial magnitudes ($r_{ij}$), polar magnitudes ($r_{ij}$), cylindrical magnitudes ($r_{ij}$), circular magnitudes ($r_{ij}$) and spherical magnitudes ($r_{ij}$), are given by:
+
+\bigskip \addcontentsline{toc}{subsubsection}{1. Radial Magnitudes Relations}
+
+\noindent \begin{tabular}{ll}
+Radial Magnitude: & $\tau_{ij} = \frac{1}{2} r_{ij}^2$ \vspace{+0.63em} \\
+Radial Magnitude: & $\dot{\tau}_{ij} = r_{ij} \dot{r}_{ij}$ \vspace{+0.63em} \\
+Radial Magnitude: & $\ddot{\tau}_{ij} = r_{ij} \ddot{r}_{ij} + \dot{r}_{ij}^2$
+\end{tabular}
+
+\bigskip \addcontentsline{toc}{subsubsection}{2. Polar Magnitudes Relations}
+
+\noindent \begin{tabular}{ll}
+Polar Magnitude: & $\tau_{ij} = \frac{1}{2} r_{ij}^2$ \vspace{+0.63em} \\
+Polar Magnitude: & $\dot{\tau}_{ij} = r_{ij} \dot{r}_{ij}$ \vspace{+0.63em} \\
+Polar Magnitude: & $\ddot{\tau}_{ij} = r_{ij} \ddot{r}_{ij} + \dot{r}_{ij}^2$
+\end{tabular}
+
+\bigskip \addcontentsline{toc}{subsubsection}{3. Cylindrical Magnitudes Relations}
+
+\noindent \begin{tabular}{ll}
+Cylindrical Magnitude: & $\tau_{ij} = \frac{1}{2} r_{ij}^2$ \vspace{+0.63em} \\
+Cylindrical Magnitude: & $\dot{\tau}_{ij} = r_{ij} \dot{r}_{ij}$ \vspace{+0.63em} \\
+Cylindrical Magnitude: & $\ddot{\tau}_{ij} = r_{ij} \ddot{r}_{ij} + \dot{r}_{ij}^2$
+\end{tabular}
+
+\bigskip \addcontentsline{toc}{subsubsection}{4. Circular Magnitudes Relations}
+
+\noindent \begin{tabular}{ll}
+Circular Magnitude: & $\tau_{ij} = \frac{1}{2} r_{ij}^2$ \vspace{+0.63em} \\
+Circular Magnitude: & $\dot{\tau}_{ij} = r_{ij} \dot{r}_{ij}$ \vspace{+0.63em} \\
+Circular Magnitude: & $\ddot{\tau}_{ij} = r_{ij} \ddot{r}_{ij} + \dot{r}_{ij}^2$
+\end{tabular}
+
+\bigskip \addcontentsline{toc}{subsubsection}{5. Spherical Magnitudes Relations}
+
+\noindent \begin{tabular}{ll}
+Spherical Magnitude: & $\tau_{ij} = \frac{1}{2} r_{ij}^2$ \vspace{+0.63em} \\
+Spherical Magnitude: & $\dot{\tau}_{ij} = r_{ij} \dot{r}_{ij}$ \vspace{+0.63em} \\
+Spherical Magnitude: & $\ddot{\tau}_{ij} = r_{ij} \ddot{r}_{ij} + \dot{r}_{ij}^2$
+\end{tabular}
+
+\bigskip
+
+\par \bigskip {\subsection*{IV. Bibliography}}\addcontentsline{toc}{subsection}{IV. Bibliography}
+
+\bigskip
+
+\noindent [\,1\,] \textbf{A. Torassa}, A Group of Invariant Equations, (2014)\hspace{+0.09em}.\hspace{+0.09em}(\hspace{+0.09em}\href{https://atorassa.github.io/physics-authors/torassa/english/pdf/34.pdf}{\texttt{PDF}}\hspace{+0.09em})
+
+\bigskip
+
+\noindent [\,2\,] \textbf{A. Torassa}, A Reformulation of Classical Mechanics, (2014)\hspace{+0.09em}.\hspace{+0.09em}(\hspace{+0.09em}\href{https://atorassa.github.io/physics-authors/torassa/english/pdf/45.pdf}{\texttt{PDF}}\hspace{+0.09em})
+
+\bigskip
+
+\noindent [\,3\,] \textbf{A. Tobla}, Linear, Radial and Scalar Magnitudes, (2015)\hspace{+0.09em}.\hspace{+0.09em}(\hspace{+0.09em}\href{https://atorassa.github.io/physics-authors/tobla/english/pdf/01.pdf}{\texttt{PDF}}\hspace{+0.09em})
+
+\bigskip
+
+\noindent [\,4\,] \textbf{A. Tobla}, A Reformulation of Classical Mechanics, (2024)\hspace{+0.09em}.\hspace{+0.09em}(\hspace{+0.09em}\href{https://atorassa.github.io/physics-authors/tobla/english/pdf/02.pdf}{\texttt{PDF}}\hspace{+0.09em})
+
+\end{document}

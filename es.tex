@@ -1,0 +1,241 @@
+
+\documentclass[10pt]{article}
+%\documentclass[a4paper,10pt]{article}
+%\documentclass[letterpaper,10pt]{article}
+
+\usepackage[dvips]{geometry}
+\geometry{papersize={180.0mm,270.0mm}}
+\geometry{totalwidth=159.0mm,totalheight=234.0mm}
+
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amsmath,bm}
+
+\frenchspacing
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue,bookmarksopen=true}
+\hypersetup{bookmarksnumbered=true,pdfstartview=FitH,pdfpagemode=UseNone}
+\hypersetup{pdftitle={Magnitudes Escalares}}
+\hypersetup{pdfauthor={Alex Kinetic}}
+
+\setlength{\arraycolsep}{1.74pt}
+
+\begin{document}
+
+\enlargethispage{+0.00em}
+
+\noindent \textbf{{\Large MAGNITUDES ESCALARES}}
+
+\bigskip \bigskip
+
+\normalsize
+
+\noindent \texttt{Resumen}: Las Magnitudes Escalares son magnitudes escalares invariantes que conservan su valor y forma bajo transformaciones de traslación y rotación, o cambios entre sistemas de coordenadas (Cartesianas, polares, esféricas, etc.)
+
+\vspace{-0.60em}
+
+\par \bigskip {\subsection*{I. Definiciones}}\addcontentsline{toc}{subsection}{I. Definiciones}
+
+\par \bigskip {\subsubsection*{0. Magnitudes Vectoriales}}\addcontentsline{toc}{subsubsection}{0. Magnitudes Vectoriales}
+
+\noindent La posición vectorial ($\vec{r}_{ij}$), la velocidad vectorial ($\vec{v}_{ij}$), y la aceleración vectorial ($\vec{a}_{ij}$) de dos partículas $i$ y $j$ están dadas por:
+
+\bigskip
+
+\noindent \begin{tabular}{lll}
+Magnitud Vectorial & Definición & Derivación \vspace{+0.75em} \\
+Posición ($\vec{r}_{ij}$) & $\vec{r}_{ij} \doteq (\vec{r}_i - \vec{r}_j)$ & (\textit{Definición fundamental}) \vspace{+0.75em} \\
+Velocidad ($\vec{v}_{ij}$) & $\vec{v}_{ij} \doteq (\vec{v}_i - \vec{v}_j)$ & $\vec{v}_{ij} \doteq d(\vec{r}_{ij}) / dt$ \vspace{+0.75em} \\
+Aceleración ($\vec{a}_{ij}$) & $\vec{a}_{ij} \doteq (\vec{a}_i - \vec{a}_j)$ & $\vec{a}_{ij} \doteq d^2(\vec{r}_{ij}) / dt^2$
+\end{tabular}
+
+\bigskip
+
+\par \bigskip {\subsubsection*{1. Magnitudes Escalares}}\addcontentsline{toc}{subsubsection}{1. Magnitudes Escalares}
+
+\noindent La posición escalar ($\tau_{ij}$), la velocidad escalar ($\dot{\tau}_{ij}$), y la aceleración escalar ($\ddot{\tau}_{ij}$) de dos partículas $i$ y $j$ están dadas por:
+
+\bigskip
+
+\noindent \begin{tabular}{lll}
+Magnitud Escalar & Definición & Derivación \vspace{+0.75em} \\
+Posición ($\tau_{ij}$) & $\tau_{ij} \doteq \frac{1}{2} \vec{r}_{ij} \cdot \vec{r}_{ij}$ & (\textit{Definición fundamental}) \vspace{+0.75em} \\
+Velocidad ($\dot{\tau}_{ij}$) & $\dot{\tau}_{ij} \doteq \vec{v}_{ij} \cdot \vec{r}_{ij}$ & $\dot{\tau}_{ij} \doteq d(\tau_{ij}) / dt$ \vspace{+0.75em} \\
+Aceleración ($\ddot{\tau}_{ij}$) & $\ddot{\tau}_{ij} \doteq \vec{a}_{ij} \cdot \vec{r}_{ij} + \vec{v}_{ij} \cdot \vec{v}_{ij}$ & $\ddot{\tau}_{ij} \doteq d^2(\tau_{ij}) / dt^2$
+\end{tabular}
+
+\bigskip
+
+\par \bigskip {\subsection*{II. Demostraciones de Invarianza Escalar}}\addcontentsline{toc}{subsection}{II. Demostraciones de Invarianza Escalar}
+
+\par \bigskip {\subsubsection*{0. Transformaciones Vectoriales (Absolutas)}}\addcontentsline{toc}{subsubsection}{0. Transformaciones Vectoriales (Absolutas)}
+
+\noindent La posición vectorial ($\vec{r}'_i$), la velocidad vectorial ($\vec{v}'_i$) y la aceleración vectorial ($\vec{a}'_i$) de una partícula $i$ con respecto a un Sistema de Referencia $S'$, cuyo origen $O'$ está en la posición vectorial $\vec{r}_{O'}$ con respecto a otro Sistema de Referencia $S$, están dadas por:
+
+\bigskip $\vec{r}\hspace{+0.09em}'\hspace{-0.36em}_i = \vec{r}_i - \vec{r}_{O'}$
+
+\bigskip $\vec{v}\hspace{+0.03em}'\hspace{-0.18em}_i = \vec{v}_i - \vec{v}_{O'} - \vec{\omega} \times (\vec{r}_i - \vec{r}_{O'})$
+
+\bigskip $\vec{a}'_i = \vec{a}_i - \vec{a}_{O'} - 2 \vec{\omega} \times (\vec{v}_i - \vec{v}_{O'}) + \vec{\omega} \times (\vec{\omega} \times (\vec{r}_i - \vec{r}_{O'})) - \vec{\alpha} \times (\vec{r}_i - \vec{r}_{O'})$
+
+\bigskip
+
+\noindent Donde $\vec{r}_i$, $\vec{v}_i$, y $\vec{a}_i$ son la posición, velocidad y aceleración vectoriales de la partícula $i$ con respecto al Sistema $S$; y $\vec{\omega}$ y $\vec{\alpha}$ son la velocidad angular y la aceleración angular del Sistema $S'$ con respecto al Sistema $S$.
+
+\bigskip
+
+\noindent \textbf{Nota}
+
+\bigskip
+
+\noindent Si $\vec{m}'_i = \vec{n}_i$ entonces:
+
+\bigskip \noindent $\dfrac{d(\vec{m}'_i)}{dt} = \dfrac{d(\vec{n}_i)}{dt} - \vec{\omega} \times \vec{n}_i$
+
+\newpage
+
+\par \bigskip {\subsubsection*{1. Invarianza de la Posición Escalar ($\tau_{ij}$)}}\addcontentsline{toc}{subsubsection}{1. Invarianza de la Posición Escalar ($\tau_{ij}$)}
+
+\noindent La Posición Escalar $\tau_{ij}$ es invariante bajo rotación y traslación porque la magnitud del vector relativo se preserva.
+
+\bigskip $\tau_{ij} = \frac{1}{2} (\vec{r}_i - \vec{r}_j) \cdot (\vec{r}_i - \vec{r}_j)$
+
+\bigskip $\tau'_{ij} = \frac{1}{2} (\vec{r}\hspace{+0.09em}'\hspace{-0.36em}_i - \vec{r}\hspace{+0.09em}'\hspace{-0.36em}_j) \cdot (\vec{r}\hspace{+0.09em}'\hspace{-0.36em}_i - \vec{r}\hspace{+0.09em}'\hspace{-0.36em}_j)$
+
+\bigskip $\text{Dado que } (\vec{r}_i - \vec{r}_j) = (\vec{r}\hspace{+0.09em}'\hspace{-0.36em}_i - \vec{r}\hspace{+0.09em}'\hspace{-0.36em}_j)$
+
+\bigskip $\text{Porque } \vec{r}\hspace{+0.09em}'\hspace{-0.36em}_i = \vec{r}_i - \vec{r}_{O'} \text{ y } \vec{r}\hspace{+0.09em}'\hspace{-0.36em}_j = \vec{r}_j - \vec{r}_{O'}$
+
+\bigskip $\text{(El vector de posición relativa es independiente del origen del Sistema.)}$
+
+\bigskip $\tau'_{ij} = \frac{1}{2} (\vec{r}_i - \vec{r}_j) \cdot (\vec{r}_i - \vec{r}_j)$
+
+\bigskip $\text{Por lo tanto: } \tau'_{ij} = \tau_{ij}$
+
+\par \bigskip {\subsubsection*{2. Invarianza de la Velocidad Escalar ($\dot{\tau}_{ij}$)}}\addcontentsline{toc}{subsubsection}{2. Invarianza de la Velocidad Escalar ($\dot{\tau}_{ij}$)}
+
+\noindent La Velocidad Escalar $\dot{\tau}_{ij}$ es invariante porque el producto cruz generado por la velocidad angular ($\vec{\omega}$) es perpendicular al vector de posición relativa, resultando en un producto escalar cero.
+
+\bigskip $\dot{\tau}_{ij} = (\vec{v}_i - \vec{v}_j) \cdot (\vec{r}_i - \vec{r}_j)$
+
+\bigskip $\dot{\tau}'_{ij} = (\vec{v}\hspace{+0.03em}'\hspace{-0.18em}_i - \vec{v}\hspace{+0.03em}'\hspace{-0.18em}_j) \cdot (\vec{r}\hspace{+0.09em}'\hspace{-0.36em}_i - \vec{r}\hspace{+0.09em}'\hspace{-0.36em}_j)$
+
+\bigskip $\dot{\tau}'_{ij} = \left( (\vec{v}_i - \vec{v}_j) - \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right) \cdot (\vec{r}_i - \vec{r}_j)$
+
+\bigskip $\text{Dado que } (-\ \vec{\omega} \times (\vec{r}_i - \vec{r}_j)) \cdot (\vec{r}_i - \vec{r}_j) = 0$
+
+\bigskip $\text{(El término rotacional es ortogonal al vector de posición relativa.)}$
+
+\bigskip $\text{Porque } (\vec{A} \times \vec{B}) \cdot \vec{B} = 0 \text{ (Propiedad del Triple Producto Escalar)}$
+
+\bigskip $\dot{\tau}'_{ij} = (\vec{v}_i - \vec{v}_j) \cdot (\vec{r}_i - \vec{r}_j)$
+
+\bigskip $\text{Por lo tanto: } \dot{\tau}'_{ij} = \dot{\tau}_{ij}$
+
+\par \bigskip {\subsubsection*{3. Invarianza de la Aceleración Escalar ($\ddot{\tau}_{ij}$)}}\addcontentsline{toc}{subsubsection}{3. Invarianza de la Aceleración Escalar ($\ddot{\tau}_{ij}$)}
+
+\noindent La Aceleración Escalar $\ddot{\tau}_{ij}$ es invariante porque los términos inerciales (Aceleración Angular, Coriolis y Centrífuga) se anulan mutuamente debido a las propiedades de los productos vectoriales y escalares.
+
+\bigskip $\ddot{\tau}_{ij} = (\vec{a}_i - \vec{a}_j) \cdot (\vec{r}_i - \vec{r}_j) + (\vec{v}_i - \vec{v}_j) \cdot (\vec{v}_i - \vec{v}_j)$
+
+\bigskip $\ddot{\tau}'_{ij} = (\vec{a}'_i - \vec{a}'_j) \cdot (\vec{r}\hspace{+0.09em}'\hspace{-0.36em}_i - \vec{r}\hspace{+0.09em}'\hspace{-0.36em}_j) + (\vec{v}\hspace{+0.03em}'\hspace{-0.18em}_i - \vec{v}\hspace{+0.03em}'\hspace{-0.18em}_j) \cdot (\vec{v}\hspace{+0.03em}'\hspace{-0.18em}_i - \vec{v}\hspace{+0.03em}'\hspace{-0.18em}_j)$
+
+\bigskip $\ddot{\tau}'_{ij} = \left[ (\vec{a}_i - \vec{a}_j) - 2 \vec{\omega} \times (\vec{v}_i - \vec{v}_j) + \vec{\omega} \times (\vec{\omega} \times (\vec{r}_i - \vec{r}_j)) - \vec{\alpha} \times (\vec{r}_i - \vec{r}_j) \right] \cdot (\vec{r}_i - \vec{r}_j)$
+
+\bigskip $+ \left[ (\vec{v}_i - \vec{v}_j) - \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right] \cdot \left[ (\vec{v}_i - \vec{v}_j) - \vec{\omega} \times (\vec{r}_i - \vec{r}_j) \right]$
+
+\bigskip $\text{Dado que } - (\vec{\alpha} \times (\vec{r}_i - \vec{r}_j)) \cdot (\vec{r}_i - \vec{r}_j) = 0 \text{ (El término de aceleración angular se anula)}$
+
+\bigskip $\text{Porque } (\vec{A} \times \vec{B}) \cdot \vec{B} = 0 \text{ (Propiedad del Triple Producto Escalar)}$
+
+\newpage
+
+\bigskip $\text{Dado que } - 2\,(\vec{\omega} \times (\vec{v}_i - \vec{v}_j)) \cdot (\vec{r}_i - \vec{r}_j) - 2\,(\vec{v}_i - \vec{v}_j) \cdot (\vec{\omega} \times (\vec{r}_i - \vec{r}_j)) = 0 \text{ (Los términos de Coriolis se anulan)}$
+
+\bigskip $\text{Porque } (\vec{A} \times \vec{B}) \cdot \vec{C} = \vec{A} \cdot (\vec{B} \times \vec{C}) \hfill \text{ (Propiedad de Permutación Cíclica del Triple Producto Escalar)}$
+
+\bigskip $\text{Dado que } +\,(\vec{\omega} \times (\vec{\omega} \times (\vec{r}_i - \vec{r}_j))) \cdot (\vec{r}_i - \vec{r}_j)\,+\,(\vec{\omega} \times (\vec{r}_i - \vec{r}_j)) \cdot (\vec{\omega} \times (\vec{r}_i - \vec{r}_j)) = 0 \text{ (Los términos Centrífugos}$
+
+\hfill $\text{se anulan)}$
+
+\vspace{-1.20em}
+
+\bigskip $\text{Dado que } + \vec{P} \cdot (\vec{r}_i - \vec{r}_j) + E = 0$
+
+\bigskip $\text{Porque } \vec{P} = \vec{A} \times (\vec{B} \times \vec{C}) = (\vec{A} \cdot \vec{C}) \ \vec{B} - (\vec{A} \cdot \vec{B}) \ \vec{C} \text{ (Triple Producto Vectorial)}$
+
+\bigskip $\text{Porque } E = (\vec{A} \times \vec{B}) \cdot (\vec{A} \times \vec{B}) = (\vec{A} \cdot \vec{A}) \ (\vec{B} \cdot \vec{B}) - (\vec{A} \cdot \vec{B})^2 \text{ (Identidad de Lagrange)}$
+
+\bigskip $\ddot{\tau}'_{ij} = (\vec{a}_i - \vec{a}_j) \cdot (\vec{r}_i - \vec{r}_j) + (\vec{v}_i - \vec{v}_j) \cdot (\vec{v}_i - \vec{v}_j)$
+
+\bigskip $\text{Por lo tanto: } \ddot{\tau}'_{ij} = \ddot{\tau}_{ij}$
+
+\par \smallskip {\subsection*{III. Relaciones Fundamentales}}\addcontentsline{toc}{subsection}{III. Relaciones Fundamentales}
+
+\bigskip
+
+\noindent Las magnitudes escalares ($\tau_{ij}, \dot{\tau}_{ij}, \ddot{\tau}_{ij}$) expresadas con magnitudes radiales ($r_{ij}$), magnitudes polares ($r_{ij}$), magnitudes cilíndricas ($r_{ij}$), magnitudes circulares ($r_{ij}$) y magnitudes esféricas ($r_{ij}$), están dadas por:
+
+\bigskip \addcontentsline{toc}{subsubsection}{1. Relaciones de Magnitudes Radiales}
+
+\noindent \begin{tabular}{ll}
+Magnitud Radial: & $\tau_{ij} = \frac{1}{2} r_{ij}^2$ \vspace{+0.63em} \\
+Magnitud Radial: & $\dot{\tau}_{ij} = r_{ij} \dot{r}_{ij}$ \vspace{+0.63em} \\
+Magnitud Radial: & $\ddot{\tau}_{ij} = r_{ij} \ddot{r}_{ij} + \dot{r}_{ij}^2$
+\end{tabular}
+
+\bigskip \addcontentsline{toc}{subsubsection}{2. Relaciones de Magnitudes Polares}
+
+\noindent \begin{tabular}{ll}
+Magnitud Polar: & $\tau_{ij} = \frac{1}{2} r_{ij}^2$ \vspace{+0.63em} \\
+Magnitud Polar: & $\dot{\tau}_{ij} = r_{ij} \dot{r}_{ij}$ \vspace{+0.63em} \\
+Magnitud Polar: & $\ddot{\tau}_{ij} = r_{ij} \ddot{r}_{ij} + \dot{r}_{ij}^2$
+\end{tabular}
+
+\bigskip \addcontentsline{toc}{subsubsection}{3. Relaciones de Magnitudes Cilíndricas}
+
+\noindent \begin{tabular}{ll}
+Magnitud Cilíndrica: & $\tau_{ij} = \frac{1}{2} r_{ij}^2$ \vspace{+0.63em} \\
+Magnitud Cilíndrica: & $\dot{\tau}_{ij} = r_{ij} \dot{r}_{ij}$ \vspace{+0.63em} \\
+Magnitud Cilíndrica: & $\ddot{\tau}_{ij} = r_{ij} \ddot{r}_{ij} + \dot{r}_{ij}^2$
+\end{tabular}
+
+\bigskip \addcontentsline{toc}{subsubsection}{4. Relaciones de Magnitudes Circulares}
+
+\noindent \begin{tabular}{ll}
+Magnitud Circular: & $\tau_{ij} = \frac{1}{2} r_{ij}^2$ \vspace{+0.63em} \\
+Magnitud Circular: & $\dot{\tau}_{ij} = r_{ij} \dot{r}_{ij}$ \vspace{+0.63em} \\
+Magnitud Circular: & $\ddot{\tau}_{ij} = r_{ij} \ddot{r}_{ij} + \dot{r}_{ij}^2$
+\end{tabular}
+
+\bigskip \addcontentsline{toc}{subsubsection}{5. Relaciones de Magnitudes Esféricas}
+
+\noindent \begin{tabular}{ll}
+Magnitud Esférica: & $\tau_{ij} = \frac{1}{2} r_{ij}^2$ \vspace{+0.63em} \\
+Magnitud Esférica: & $\dot{\tau}_{ij} = r_{ij} \dot{r}_{ij}$ \vspace{+0.63em} \\
+Magnitud Esférica: & $\ddot{\tau}_{ij} = r_{ij} \ddot{r}_{ij} + \dot{r}_{ij}^2$
+\end{tabular}
+
+\bigskip
+
+\par \bigskip {\subsection*{IV. Bibliografía}}\addcontentsline{toc}{subsection}{IV. Bibliografía}
+
+\bigskip
+
+\noindent [\,1\,] \textbf{A. Torassa}, Una Terna de Ecuaciones Invariantes, (2014)\hspace{+0.09em}.\hspace{+0.09em}(\hspace{+0.09em}\href{https://atorassa.github.io/physics-authors/torassa/spanish/pdf/34.pdf}{\texttt{PDF}}\hspace{+0.09em})
+
+\bigskip
+
+\noindent [\,2\,] \textbf{A. Torassa}, Una Reformulación de la Mecánica Clásica, (2014)\hspace{+0.09em}.\hspace{+0.09em}(\hspace{+0.09em}\href{https://atorassa.github.io/physics-authors/torassa/spanish/pdf/45.pdf}{\texttt{PDF}}\hspace{+0.09em})
+
+\bigskip
+
+\noindent [\,3\,] \textbf{A. Tobla}, Magnitudes Lineales, Radiales y Escalares, (2015)\hspace{+0.09em}.\hspace{+0.09em}(\hspace{+0.09em}\href{https://atorassa.github.io/physics-authors/tobla/spanish/pdf/01.pdf}{\texttt{PDF}}\hspace{+0.09em})
+
+\bigskip
+
+\noindent [\,4\,] \textbf{A. Tobla}, Una Reformulación de la Mecánica Clásica, (2024)\hspace{+0.09em}.\hspace{+0.09em}(\hspace{+0.09em}\href{https://atorassa.github.io/physics-authors/tobla/spanish/pdf/02.pdf}{\texttt{PDF}}\hspace{+0.09em})
+
+\end{document}
